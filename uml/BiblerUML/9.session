@@ -1,0 +1,12 @@
+window_sizes 1920 1018 320 1594 909 35
+diagrams
+  active  classdiagram_ref 128009 // application
+    1594 902 100 4 317 0
+end
+show_stereotypes
+selected operation_ref 156809 // getEntryDict
+open
+  class_ref 136201 // Book
+  class_ref 143241 // ReferenceManager
+end
+end

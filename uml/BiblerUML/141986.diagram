@@ -1,0 +1,58 @@
+format 76
+
+classinstancecanvas 128034 classinstance_ref 142626 // 
+  xyz 97 6 2000 life_line_z 2000
+end
+classinstancecanvas 128546 classinstance_ref 134690 // refManager
+  xyz 198 5 2005 life_line_z 2000
+end
+classinstancecanvas 128930 classinstance_ref 141474 // formatManager
+  xyz 385 5 2010 life_line_z 2000
+end
+durationcanvas 128162 classinstance_ref 128034 // :UserInterface
+  xyzwh 132 56 2010 11 84
+end
+durationcanvas 128674 classinstance_ref 128546 // refManager:ReferenceManager
+  xyzwh 274 70 2010 11 65
+end
+durationcanvas 129058 classinstance_ref 128930 // formatManager:FormatManager
+  xyzwh 461 87 2010 11 35
+end
+durationcanvas 129442 classinstance_ref 128034 // :UserInterface
+  xyzwh 132 121 2010 11 29
+end
+lostfoundmsgsupport 128290 xyz 24 58 2015
+msg 128418 found_asynchronous
+  from lostfoundmsgsupport_ref 128290
+  to durationcanvas_ref 128162
+  yz 56 2015 msg operation_ref 135842 // "sort(in self : , in field : EntryListColumn) : bool"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  args "EntryListColumn"
+  label_xy 30 42
+msg 128802 asynchronous
+  from durationcanvas_ref 128162
+  to durationcanvas_ref 128674
+  yz 71 2020 msg operation_ref 169378 // "sort(in self : , in field : EntryListColumn) : bool"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  args "EntryListColumn"
+  label_xy 156 57
+msg 129186 asynchronous
+  from durationcanvas_ref 128674
+  to durationcanvas_ref 129058
+  yz 88 2025 msg operation_ref 153122 // "sort(in self : , in field : EntryListColumn, in entries : list) : list"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  args "EntryListColumn, entries"
+  label_xy 302 74
+msg 129314 return
+  from durationcanvas_ref 129058
+  to durationcanvas_ref 128674
+  yz 111 2030 explicitmsg "sorted list"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 350 97
+msg 129570 return
+  from durationcanvas_ref 128674
+  to durationcanvas_ref 129442
+  yz 123 2035 explicitmsg "bool"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 198 109
+end

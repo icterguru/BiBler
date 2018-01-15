@@ -1,0 +1,21 @@
+window_sizes 1920 1058 450 1464 949 35
+diagrams
+  classdiagram_ref 128009 // app
+    1464 949 100 3 0 0
+  active  classdiagram_ref 128099 // Packages
+    1464 947 100 4 0 0
+end
+show_stereotypes
+selected 
+package_ref 129 // BiblerUML
+open
+  
+package_ref 134883 // gui
+  
+package_ref 128227 // utils
+  class_ref 135945 // Entry
+  class_ref 129635 // Importer
+  class_ref 156643 // EmptyEntry
+  classview_ref 147939 // Packages
+end
+end

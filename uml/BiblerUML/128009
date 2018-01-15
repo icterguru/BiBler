@@ -1,0 +1,3758 @@
+format 76
+"app" // app
+  revision 50
+  modified_by 26 "Eugene Syriani"
+  // class settings
+  //class diagram settings
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  //use case diagram settings
+  package_name_in_tab default show_context default auto_label_position default draw_all_relations default class_drawing_mode default shadow default show_stereotype_properties default
+  //sequence diagram settings
+  show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+  //collaboration diagram settings
+  show_full_operations_definition default show_hierarchical_rank default write_horizontally default class_drawing_mode default drawing_language default package_name_in_tab default show_context default show_msg_context default draw_all_relations default shadow default show_stereotype_properties default
+  //object diagram settings
+   write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+  //component diagram settings
+  package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  //deployment diagram settings
+  package_name_in_tab default show_context default write_horizontally default auto_label_position default draw_all_relations default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  //state diagram settings
+  package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+  show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+  //activity diagram settings
+  package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+  show_infonote default drawing_language default show_stereotype_properties default
+  
+  stereotype "toplevel"
+  python_dir "app"
+  classview 147939 "Packages"
+    //class diagram settings
+    draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+    //collaboration diagram settings
+    show_full_operations_definition default show_hierarchical_rank default write_horizontally default class_drawing_mode default drawing_language default package_name_in_tab default show_context default show_msg_context default draw_all_relations default shadow default show_stereotype_properties default
+    //object diagram settings
+     write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+    //sequence diagram settings
+    show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+    //state diagram settings
+    package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+    show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+    //class settings
+    //activity diagram settings
+    package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+    show_infonote default drawing_language default show_stereotype_properties default
+    classdiagram 128099 "Packages"
+      draw_all_relations no hide_attributes yes hide_operations yes hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language uml show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow no show_stereotype_properties default
+      class_color transparent note_color transparent package_color transparent fragment_color transparent 
+      size A4
+    end
+  end
+
+  classview 128009 "Class"
+    //class diagram settings
+    draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition yes show_members_visibility default show_members_stereotype yes show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers yes member_max_width 0 show_parameter_dir no show_parameter_name yes package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+    //collaboration diagram settings
+    show_full_operations_definition default show_hierarchical_rank default write_horizontally default class_drawing_mode default drawing_language default package_name_in_tab default show_context default show_msg_context default draw_all_relations default shadow default show_stereotype_properties default
+    //object diagram settings
+     write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+    //sequence diagram settings
+    show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+    //state diagram settings
+    package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+    show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+    //class settings
+    //activity diagram settings
+    package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+    show_infonote default drawing_language default show_stereotype_properties default
+    associated_deployment_view deploymentview_ref 134562 // Deployment
+    classdiagram 128009 "app"
+      draw_all_relations no hide_attributes no hide_operations no hide_getset_operations no show_members_full_definition yes show_members_visibility yes show_members_stereotype yes show_members_context uml show_members_multiplicity yes show_members_initialization yes show_attribute_modifiers yes member_max_width 127 show_parameter_dir no show_parameter_name yes package_name_in_tab default class_drawing_mode default drawing_language uml show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility yes show_infonote default shadow no show_stereotype_properties default
+      class_color transparent note_color transparent package_color transparent fragment_color transparent 
+      size A3
+    end
+
+    classdiagram 128026 "entries"
+      draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+      class_color transparent note_color transparent package_color transparent fragment_color transparent 
+      size A4
+    end
+
+    classdiagram 134532 "fields"
+      draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity yes show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+      class_color transparent note_color transparent package_color transparent fragment_color transparent 
+      size A4
+    end
+
+    classdiagram 128004 "imports"
+      draw_all_relations no hide_attributes yes hide_operations yes hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+      class_color transparent note_color transparent package_color transparent fragment_color transparent 
+      size A4
+    end
+
+    class 150115 "__init__"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    class 128355 "BibTeXParser"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "import re
+
+class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      operation 128355 "__init__"
+	public explicit_return_type ""
+	nparams 2
+	  param inout name "self" explicit_type ""
+	  param in name "bibtex" explicit_type "string"
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}, ${p1}${v1}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 128227 "parse"
+	public return_type class_ref 135945 // Entry
+	nparams 1
+	  param in name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 168610 "findField"
+	public explicit_return_type "string"
+	nparams 2
+	  param in name "self" explicit_type ""
+	  param in name "field" explicit_type "string"
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}, ${p1}${v1}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      attribute 144483 "bibtex"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 128004 "re_header"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      operation 128772 "parseNested"
+	private explicit_return_type "string"
+	nparams 5
+	  param inout name "self" explicit_type ""
+	  param in name "s" explicit_type "string"
+	  param in name "separator" explicit_type "string"
+	  param in name "inv_separator" explicit_type "string"
+	  param in name "level" explicit_type "int"
+	
+	
+	
+	python_def "${@}${static}${abstract}def __${name}${(}${p0}${v0}, ${p1}${v1}, ${p2}${v2}, ${p3}${v3}, ${p4}${v4}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      classrelation 152964 // <dependency>
+	relation 152964 -_->
+	  stereotype "from"
+	  a package
+	    python "${type}"
+	    classrelation_ref 152964 // <dependency>
+	  b parent class_ref 128611 // Book
+      end
+
+      classrelation 153092 // <dependency>
+	relation 153092 -_->
+	  stereotype "from"
+	  a package
+	    python "${type}"
+	    classrelation_ref 153092 // <dependency>
+	  b parent class_ref 128538 // Manual
+      end
+
+      classrelation 153220 // <dependency>
+	relation 153220 -_->
+	  stereotype "from"
+	  a package
+	    python "${type}"
+	    classrelation_ref 153220 // <dependency>
+	  b parent class_ref 128026 // Booklet
+      end
+
+      classrelation 153348 // <dependency>
+	relation 153348 -_->
+	  stereotype "from"
+	  a package
+	    python "${type}"
+	    classrelation_ref 153348 // <dependency>
+	  b parent class_ref 128867 // Phdthesis
+      end
+
+      classrelation 153476 // <dependency>
+	relation 153476 -_->
+	  stereotype "from"
+	  a package
+	    python "${type}"
+	    classrelation_ref 153476 // <dependency>
+	  b parent class_ref 128666 // Mastersthesis
+      end
+
+      classrelation 153604 // <dependency>
+	relation 153604 -_->
+	  stereotype "from"
+	  a package
+	    python "${type}"
+	    classrelation_ref 153604 // <dependency>
+	  b parent class_ref 128739 // Inproceedings
+      end
+
+      classrelation 153732 // <dependency>
+	relation 153732 -_->
+	  stereotype "from"
+	  a package
+	    python "${type}"
+	    classrelation_ref 153732 // <dependency>
+	  b parent class_ref 128794 // Misc
+      end
+
+      classrelation 153860 // <dependency>
+	relation 153860 -_->
+	  stereotype "from"
+	  a package
+	    python "${type}"
+	    classrelation_ref 153860 // <dependency>
+	  b parent class_ref 128995 // Techreport
+      end
+
+      classrelation 153988 // <dependency>
+	relation 153988 -_->
+	  stereotype "from"
+	  a package
+	    python "${type}"
+	    classrelation_ref 153988 // <dependency>
+	  b parent class_ref 128410 // Incollection
+      end
+
+      classrelation 154116 // <dependency>
+	relation 154116 -_->
+	  stereotype "from"
+	  a package
+	    python "${type}"
+	    classrelation_ref 154116 // <dependency>
+	  b parent class_ref 128154 // Conference
+      end
+
+      classrelation 154244 // <dependency>
+	relation 154244 -_->
+	  stereotype "from"
+	  a package
+	    python "${type}"
+	    classrelation_ref 154244 // <dependency>
+	  b parent class_ref 128922 // Proceedings
+      end
+
+      classrelation 154372 // <dependency>
+	relation 154372 -_->
+	  stereotype "from"
+	  a package
+	    python "${type}"
+	    classrelation_ref 154372 // <dependency>
+	  b parent class_ref 128483 // Article
+      end
+
+      classrelation 154500 // <dependency>
+	relation 154500 -_->
+	  stereotype "from"
+	  a package
+	    python "${type}"
+	    classrelation_ref 154500 // <dependency>
+	  b parent class_ref 156643 // EmptyEntry
+      end
+
+      classrelation 154628 // <dependency>
+	relation 154628 -_->
+	  stereotype "from"
+	  a package
+	    python "${type}"
+	    classrelation_ref 154628 // <dependency>
+	  b parent class_ref 128282 // Inbook
+      end
+
+      classrelation 154756 // <dependency>
+	relation 154756 -_->
+	  stereotype "from"
+	  a package
+	    python "${type}"
+	    classrelation_ref 154756 // <dependency>
+	  b parent class_ref 129050 // Unpublished
+      end
+    end
+
+    class 135945 "Entry"
+      abstract visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      attribute 131171 "lastID"
+	class_attribute protected explicit_type "int"
+	init_value "0"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 131043 "id"
+	protected explicit_type "int"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}__${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 137754 "entryType"
+	protected explicit_type "string"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 137882 "key"
+	protected explicit_type "string"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      operation 128611 "__init__"
+	public explicit_return_type ""
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 151651 "getId"
+	public explicit_return_type "int"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 152035 "setId"
+	public explicit_return_type "void"
+	nparams 2
+	  param inout name "self" explicit_type ""
+	  param in name "_id" explicit_type "int"
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}, ${p1}${v1}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 139546 "getEntryType"
+	public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 139674 "getKey"
+	public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 139802 "setKey"
+	public explicit_return_type "void"
+	nparams 2
+	  param inout name "self" explicit_type ""
+	  param in name "key" explicit_type "string"
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}, ${p1}${v1}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 181987 "generateKey"
+	public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 144930 "getField"
+	public return_type class_ref 128227 // Field
+	nparams 2
+	  param in name "self" explicit_type ""
+	  param in name "field" explicit_type "string"
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}, ${p1}${v1}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 139930 "getFieldValue"
+	public explicit_return_type "string"
+	nparams 2
+	  param inout name "self" explicit_type ""
+	  param in name "field" explicit_type "string"
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}, ${p1}${v1}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 151779 "setField"
+	public explicit_return_type "void"
+	nparams 3
+	  param inout name "self" explicit_type ""
+	  param in name "field" explicit_type "string"
+	  param in name "value" explicit_type "string"
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}, ${p1}${v1}, ${p2}${v2}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 140058 "formatField"
+	public explicit_return_type "void"
+	nparams 2
+	  param inout name "self" explicit_type ""
+	  param in name "field" explicit_type "string"
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}, ${p1}${v1}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 140826 "getAllFields"
+	public return_type class_ref 128227 // Field
+	multiplicity "*"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 140186 "iterRequiredFields"
+	stereotype "iterable"
+	public return_type class_ref 128227 // Field
+	multiplicity "*"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 140314 "iterOptionalFields"
+	stereotype "iterable"
+	public return_type class_ref 128227 // Field
+	multiplicity "*"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 140442 "iterAdditionalFields"
+	stereotype "iterable"
+	public return_type class_ref 128227 // Field
+	multiplicity "*"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 128483 "validate"
+	public explicit_return_type "bool"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 158563 "matches"
+	public explicit_return_type "bool"
+	nparams 2
+	  param inout name "self" explicit_type ""
+	  param in name "query" explicit_type "string"
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}, ${p1}${v1}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 156809 "toEntryDict"
+	public return_type class_ref 136675 // EntryDict
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 154658 "toBibTeX"
+	public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 154530 "toCSV"
+	public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 129379 "toHtmlIEEETrans"
+	abstract cpp_virtual public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 129507 "toHtmlACM"
+	abstract cpp_virtual public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 182371 "getHtmlHeader"
+	protected explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 140570 "__str__"
+	public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 182243 "getACMContributors"
+	class_operation public explicit_return_type "string"
+	nparams 1
+	  param in name "contributorField" type class_ref 128227 // Field
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 140698 "resetId"
+	class_operation public explicit_return_type "void"
+	nparams 0
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      classrelation 128099 // requiredFields (<directional composition>)
+	relation 128099 *-->
+	  stereotype "map"
+	  a role_name "requiredFields" multiplicity "1..*" protected
+	    python "${comment}${self}${name} = ${stereotype}()
+"
+	    classrelation_ref 128099 // requiredFields (<directional composition>)
+	  b parent class_ref 128227 // Field
+      end
+
+      classrelation 157795 // <dependency>
+	relation 157539 -_->
+	  stereotype "from"
+	  a package
+	    python "${type}"
+	    classrelation_ref 157795 // <dependency>
+	  b parent class_ref 136803 // EntryListColumn
+      end
+
+      classrelation 157667 // <dependency>
+	relation 157411 -_->
+	  stereotype "from"
+	  a package
+	    python "${type}"
+	    classrelation_ref 157667 // <dependency>
+	  b parent class_ref 136675 // EntryDict
+      end
+
+      classrelation 135578 // optionalFields (<directional composition>)
+	relation 135578 *-->
+	  stereotype "map"
+	  a role_name "optionalFields" multiplicity "*" protected
+	    python "${comment}${self}${name} = ${stereotype}()
+"
+	    classrelation_ref 135578 // optionalFields (<directional composition>)
+	  b parent class_ref 128227 // Field
+      end
+
+      classrelation 135706 // additionalFields (<directional composition>)
+	relation 135706 *-->
+	  stereotype "map"
+	  a role_name "additionalFields" multiplicity "*" protected
+	    python "${comment}${self}${name} = ${stereotype}()
+"
+	    classrelation_ref 135706 // additionalFields (<directional composition>)
+	  b parent class_ref 128227 // Field
+      end
+
+      classrelation 154884 // <dependency>
+	relation 154884 -_->
+	  stereotype "from"
+	  a package
+	    python "${type}"
+	    classrelation_ref 154884 // <dependency>
+	  b parent class_ref 135578 // FieldName
+      end
+
+      classrelation 155012 // <dependency>
+	relation 155012 -_->
+	  stereotype "from"
+	  a package
+	    python "${type}"
+	    classrelation_ref 155012 // <dependency>
+	  b parent class_ref 128004 // Author
+      end
+
+      classrelation 155140 // <dependency>
+	relation 155140 -_->
+	  stereotype "from"
+	  a package
+	    python "${type}"
+	    classrelation_ref 155140 // <dependency>
+	  b parent class_ref 128227 // Field
+      end
+
+      classrelation 155268 // <dependency>
+	relation 155268 -_->
+	  stereotype "from"
+	  a package
+	    python "${type}"
+	    classrelation_ref 155268 // <dependency>
+	  b parent class_ref 128516 // Editor
+      end
+
+      classrelation 155396 // <dependency>
+	relation 155396 -_->
+	  stereotype "from"
+	  a package
+	    python "${type}"
+	    classrelation_ref 155396 // <dependency>
+	  b parent class_ref 129540 // Pages
+      end
+
+      classrelation 155524 // <dependency>
+	relation 155524 -_->
+	  stereotype "from"
+	  a package
+	    python "${type}"
+	    classrelation_ref 155524 // <dependency>
+	  b parent class_ref 130564 // Year
+      end
+    end
+
+    class 129123 "Exporter"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      operation 144099 "__init__"
+	public explicit_return_type ""
+	nparams 3
+	  param inout name "self" explicit_type ""
+	  param in name "path" explicit_type "string"
+	  param in name "entries" type class_ref 135945 // Entry
+	multiplicity "*"
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}, ${p1}${v1}, ${p2}${v2}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 143971 "bibtexExport"
+	public explicit_return_type "int"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 144355 "csvExport"
+	public explicit_return_type "int"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 144483 "htmlIEEETransExport"
+	public explicit_return_type "int"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 144611 "htmlACMExport"
+	public explicit_return_type "int"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 174435 "export"
+	private explicit_return_type "int"
+	nparams 2
+	  param inout name "self" explicit_type ""
+	  param in name "exporter" explicit_type "lambda"
+	
+	
+	
+	python_def "${@}${static}${abstract}def __${name}${(}${p0}${v0}, ${p1}${v1}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      classrelation 142362 // <generalisation>
+	relation 142362 ---|>
+	  a public
+	    python "${type}"
+	    classrelation_ref 142362 // <generalisation>
+	  b parent class_ref 142106 // ImpEx
+      end
+    end
+
+    class 128227 "Field"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "import re
+
+class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl "${comment}${abstract}${custom}valuetype ${name}${inherit} {
+${members}};
+"
+      explicit_switch_type ""
+      
+      attribute 130915 "name"
+	protected explicit_type "string"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 130787 "value"
+	protected explicit_type "string"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      operation 128516 "__init__"
+	public explicit_return_type ""
+	nparams 3
+	  param inout name "self" explicit_type ""
+	  param in name "name" explicit_type "string"
+	  param in name "value" explicit_type "string"
+	    defaultvalue "''"
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}, ${p1}${v1}, ${p2}${v2}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 128388 "getValue"
+	public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 141082 "setValue"
+	public explicit_return_type "void"
+	nparams 2
+	  param inout name "self" explicit_type ""
+	  param in name "value" explicit_type "string"
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}, ${p1}${v1}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 128004 "format"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 128260 "simplify"
+	class_operation public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 128132 "toHTML"
+	class_operation public explicit_return_type "string"
+	nparams 0
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 141210 "clean"
+	class_operation private explicit_return_type "void"
+	nparams 0
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      classrelation 152836 // <dependency>
+	relation 152836 -_->
+	  stereotype "from"
+	  a package
+	    python "${type}"
+	    classrelation_ref 152836 // <dependency>
+	  b parent class_ref 135578 // FieldName
+      end
+    end
+
+    class 135578 "FieldName"
+      visibility package stereotype "enum"
+      cpp_decl "${comment}enum ${name} {
+${items}
+};
+"
+      java_decl "${comment}${@}${visibility}${final}${abstract}enum ${name}${implements} {
+${items};
+${members}}
+"
+      php_decl "${comment}${visibility}final class ${name} {
+${items}}
+"
+      python_2_2 python_decl "class ${name}:
+${docstring}${members}
+"
+      idl_decl "${comment}enum ${name} {
+${items}};
+"
+      explicit_switch_type ""
+      
+      attribute 128026 "Address"
+	class_attribute public explicit_type "string"
+	init_value "'address'"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 128154 "Annote"
+	class_attribute public explicit_type "string"
+	init_value "'annote'"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 128282 "Author"
+	class_attribute public explicit_type "string"
+	init_value "'author'"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 128410 "Booktitle"
+	class_attribute public explicit_type "string"
+	init_value "'booktitle'"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 141444 "Chapter"
+	class_attribute public type class_ref 135578 // FieldName
+	init_value "'chapter'"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 128538 "Crossref"
+	class_attribute public explicit_type "string"
+	init_value "'crossref'"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 128666 "Edition"
+	class_attribute public explicit_type "string"
+	init_value "'edition'"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 128794 "Editior"
+	class_attribute public explicit_type "string"
+	init_value "'editior'"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 128922 "Howpublished"
+	class_attribute public explicit_type "string"
+	init_value "'howpublished'"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 129050 "Institution"
+	class_attribute public explicit_type "string"
+	init_value "'institution'"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 129178 "Journal"
+	class_attribute public explicit_type "string"
+	init_value "'journal'"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 129306 "Key"
+	class_attribute public explicit_type "string"
+	init_value "'key'"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 129434 "Month"
+	class_attribute public explicit_type "string"
+	init_value "'month'"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 129562 "Note"
+	class_attribute public explicit_type "string"
+	init_value "'note'"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 129690 "Number"
+	class_attribute public explicit_type "string"
+	init_value "'number'"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 129818 "Organization"
+	class_attribute public explicit_type "string"
+	init_value "'organization'"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 129946 "Pages"
+	class_attribute public explicit_type "string"
+	init_value "'pages'"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 130074 "Publisher"
+	class_attribute public explicit_type "string"
+	init_value "'publisher'"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 130202 "School"
+	class_attribute public explicit_type "string"
+	init_value "'school'"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 130330 "Series"
+	class_attribute public explicit_type "string"
+	init_value "'series'"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 130458 "Title"
+	class_attribute public explicit_type "string"
+	init_value "'title'"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 130586 "Type"
+	class_attribute public explicit_type "string"
+	init_value "'type'"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 130714 "Volume"
+	class_attribute public explicit_type "string"
+	init_value "'volume'"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 130842 "Year"
+	class_attribute public explicit_type "string"
+	init_value "'year'"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 130970 "Paper"
+	class_attribute public explicit_type "string"
+	init_value "'paper'"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 131098 "Comment"
+	class_attribute public explicit_type "string"
+	init_value "'comment'"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      operation 129763 "fromEntryListColumn"
+	class_operation public explicit_return_type "string"
+	nparams 1
+	  param in name "column" type class_ref 136803 // EntryListColumn
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 128099 "toEntryListColumn"
+	class_operation public return_type class_ref 136803 // EntryListColumn
+	nparams 1
+	  param in name "field" explicit_type "string"
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 158691 "getAllFieldNames"
+	class_operation public explicit_return_type "string"
+	multiplicity "*"
+	nparams 0
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      classrelation 155652 // <dependency>
+	relation 155652 -_->
+	  stereotype "from"
+	  a package
+	    python "${type}"
+	    classrelation_ref 155652 // <dependency>
+	  b parent class_ref 136803 // EntryListColumn
+      end
+    end
+
+    class 142106 "ImpEx"
+      abstract visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      operation 174307 "openDB"
+	protected explicit_return_type "void"
+	nparams 2
+	  param inout name "self" explicit_type ""
+	  param in name "mode" explicit_type "string"
+	
+	
+	
+	python_def "${@}${static}${abstract}def __${name}${(}${p0}${v0}, ${p1}${v1}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      attribute 137827 "database"
+	protected explicit_type "File"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      operation 140954 "closeDB"
+	protected explicit_return_type "void"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      attribute 138010 "path"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+    end
+
+    class 129635 "Importer"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      operation 130019 "__init__"
+	public explicit_return_type ""
+	nparams 3
+	  param inout name "self" explicit_type ""
+	  param in name "path" explicit_type "string"
+	  param in name "manager" type class_ref 143241 // ReferenceManager
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}, ${p1}${v1}, ${p2}${v2}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 144739 "bibtexImport"
+	public explicit_return_type "int"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 144867 "csvImport"
+	public explicit_return_type "int"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      classrelation 142234 // <generalisation>
+	relation 142234 ---|>
+	  a public
+	    python "${type}"
+	    classrelation_ref 142234 // <generalisation>
+	  b parent class_ref 142106 // ImpEx
+      end
+    end
+
+    class 143241 "ReferenceManager"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      attribute 131299 "searchResult"
+	private type class_ref 135945 // Entry
+	multiplicity "*"
+	init_value "[]"
+	stereotype "list"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${stereotype}()
+"
+	idl_decl ""
+      end
+
+      operation 151395 "__init__"
+	public explicit_return_type ""
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 143010 "add"
+	public explicit_return_type "int"
+	nparams 2
+	  param in name "self" explicit_type ""
+	  param in name "entryBibTeX" explicit_type "string"
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}, ${p1}${v1}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 143522 "update"
+	public explicit_return_type "bool"
+	nparams 3
+	  param in name "self" explicit_type ""
+	  param in name "entryId" explicit_type "int"
+	  param in name "entryBibTeX" explicit_type "string"
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}, ${p1}${v1}, ${p2}${v2}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 143650 "delete"
+	public explicit_return_type "bool"
+	nparams 2
+	  param in name "self" explicit_type ""
+	  param in name "entryId" explicit_type "int"
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}, ${p1}${v1}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 174179 "deleteAll"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 143778 "duplicate"
+	public explicit_return_type "int"
+	nparams 2
+	  param in name "self" explicit_type ""
+	  param in name "entryId" explicit_type "int"
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}, ${p1}${v1}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 169250 "search"
+	public explicit_return_type "bool"
+	nparams 2
+	  param in name "self" explicit_type ""
+	  param in name "query" explicit_type "string"
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}, ${p1}${v1}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 169378 "sort"
+	public explicit_return_type "bool"
+	nparams 2
+	  param in name "self" explicit_type ""
+	  param in name "field" type class_ref 136803 // EntryListColumn
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}, ${p1}${v1}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 137187 "getEntry"
+	public return_type class_ref 135945 // Entry
+	nparams 2
+	  param in name "self" explicit_type ""
+	  param in name "entryId" explicit_type "int"
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}, ${p1}${v1}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 153506 "getEntryCount"
+	public explicit_return_type "int"
+	nparams 1
+	  param in name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 169506 "iterEntryList"
+	stereotype "iterable"
+	public return_type class_ref 135945 // Entry
+	multiplicity "*"
+	nparams 1
+	  param in name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 129635 "iterSearchResult"
+	stereotype "iterable"
+	public return_type class_ref 135945 // Entry
+	multiplicity "*"
+	nparams 1
+	  param in name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 143138 "setKey"
+	private explicit_return_type "void"
+	nparams 2
+	  param inout name "self" explicit_type ""
+	  param inout name "entry" type class_ref 135945 // Entry
+	
+	
+	
+	python_def "${@}${static}${abstract}def __${name}${(}${p0}${v0}, ${p1}${v1}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      classrelation 155273 // entryList (<directional composition>)
+	relation 155017 *-->
+	  stereotype "list"
+	  a role_name "entryList" multiplicity "*" private
+	    python "${comment}${self}${name} = ${stereotype}()
+"
+	    classrelation_ref 155273 // entryList (<directional composition>)
+	  b multiplicity "1" parent class_ref 135945 // Entry
+      end
+
+      classrelation 137315 // <dependency>
+	relation 137059 -_->
+	  stereotype "from"
+	  a package
+	    python "${type}"
+	    classrelation_ref 137315 // <dependency>
+	  b parent class_ref 128355 // BibTeXParser
+      end
+
+      classrelation 157539 // <dependency>
+	relation 157283 -_->
+	  stereotype "from"
+	  a package
+	    python "${type}"
+	    classrelation_ref 157539 // <dependency>
+	  b parent class_ref 156643 // EmptyEntry
+      end
+
+      classrelation 171747 // <dependency>
+	relation 171491 -_->
+	  stereotype "from"
+	  a package
+	    python "${type}"
+	    classrelation_ref 171747 // <dependency>
+	  b parent class_ref 136803 // EntryListColumn
+      end
+
+      classrelation 155780 // <dependency>
+	relation 155780 -_->
+	  stereotype "from"
+	  a package
+	    python "${type}"
+	    classrelation_ref 155780 // <dependency>
+	  b parent class_ref 135578 // FieldName
+      end
+    end
+
+    class 128009 "UserInterface"
+      visibility public 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      operation 151523 "__init__"
+	public explicit_return_type ""
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}super(${class}, ${p0}).__init__()
+${body}
+"
+	
+      end
+
+      operation 143241 "start"
+	public explicit_return_type ""
+	nparams 1
+	  param in name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 143369 "exit"
+	public explicit_return_type ""
+	nparams 1
+	  param in name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 139034 "openFile"
+	public explicit_return_type ""
+	nparams 2
+	  param inout name "self" explicit_type ""
+	  param in name "path" explicit_type "string"
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}, ${p1}${v1}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 143497 "importFile"
+	public explicit_return_type "bool"
+	nparams 3
+	  param in name "self" explicit_type ""
+	  param in name "path" explicit_type "string"
+	  param in name "importFormat" type class_ref 136931 // ImportFormat
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}, ${p1}${v1}, ${p2}${v2}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 134562 "exportFile"
+	public explicit_return_type "bool"
+	nparams 3
+	  param in name "self" explicit_type ""
+	  param in name "path" explicit_type "string"
+	  param in name "exportFormat" type class_ref 137059 // ExportFormat
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}, ${p1}${v1}, ${p2}${v2}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 134690 "addEntry"
+	public explicit_return_type "int"
+	nparams 2
+	  param in name "self" explicit_type ""
+	  param in name "entryBibTeX" explicit_type "string"
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}, ${p1}${v1}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 134818 "duplicateEntry"
+	public explicit_return_type "int"
+	nparams 2
+	  param in name "self" explicit_type ""
+	  param in name "entryId" explicit_type "int"
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}, ${p1}${v1}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 134946 "updateEntry"
+	public explicit_return_type "bool"
+	nparams 3
+	  param in name "self" explicit_type ""
+	  param in name "entryId" explicit_type "int"
+	  param in name "entryBibTeX" explicit_type "string"
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}, ${p1}${v1}, ${p2}${v2}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 135074 "deleteEntry"
+	public explicit_return_type "bool"
+	nparams 2
+	  param in name "self" explicit_type ""
+	  param in name "entryId" explicit_type "int"
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}, ${p1}${v1}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 135202 "previewEntry"
+	public explicit_return_type "string"
+	nparams 2
+	  param in name "self" explicit_type ""
+	  param in name "entryId" explicit_type "int"
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}, ${p1}${v1}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 135586 "getEntryPaperURL"
+	public explicit_return_type "string"
+	nparams 2
+	  param in name "self" explicit_type ""
+	  param in name "entryId" explicit_type "int"
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}, ${p1}${v1}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 135714 "search"
+	public explicit_return_type "bool"
+	nparams 2
+	  param in name "self" explicit_type ""
+	  param in name "query" explicit_type "string"
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}, ${p1}${v1}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 135842 "sort"
+	public explicit_return_type "bool"
+	nparams 2
+	  param in name "self" explicit_type ""
+	  param in name "field" explicit_type "EntryListColumn"
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}, ${p1}${v1}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 135970 "getEntry"
+	public return_type class_ref 136675 // EntryDict
+	nparams 2
+	  param in name "self" explicit_type ""
+	  param in name "entryId" explicit_type "int"
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}, ${p1}${v1}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 136098 "getBibTeX"
+	public explicit_return_type "string"
+	nparams 2
+	  param in name "self" explicit_type ""
+	  param in name "entryId" explicit_type "int"
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}, ${p1}${v1}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 136226 "getAllEntries"
+	public return_type class_ref 136675 // EntryDict
+	multiplicity "*"
+	nparams 1
+	  param in name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 136354 "getEntryCount"
+	public explicit_return_type "int"
+	nparams 1
+	  param in name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 136482 "getSearchResult"
+	public return_type class_ref 136675 // EntryDict
+	multiplicity "*"
+	nparams 1
+	  param in name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 139162 "iterAllEntries"
+	stereotype "iterable"
+	public return_type class_ref 136675 // EntryDict
+	multiplicity "*"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 139290 "iterSearchResults"
+	stereotype "iterable"
+	public return_type class_ref 136675 // EntryDict
+	multiplicity "*"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      classrelation 137059 // <dependency>
+	relation 136803 -_->
+	  stereotype "from"
+	  a package
+	    python "${type}"
+	    classrelation_ref 137059 // <dependency>
+	  b parent class_ref 129635 // Importer
+      end
+
+      classrelation 136931 // <dependency>
+	relation 136675 -_->
+	  stereotype "from"
+	  a package
+	    python "${type}"
+	    classrelation_ref 136931 // <dependency>
+	  b parent class_ref 129123 // Exporter
+      end
+
+      classrelation 137571 // <realization>
+	relation 137315 -_-|>
+	  a public
+	    python "${type}"
+	    classrelation_ref 137571 // <realization>
+	  b parent class_ref 129161 // IApplication
+      end
+
+      classrelation 144099 // <dependency>
+	relation 143843 -_->
+	  stereotype "from"
+	  a package
+	    python "${type}"
+	    classrelation_ref 144099 // <dependency>
+	  b parent class_ref 143587 // Preferences
+      end
+
+      classrelation 157283 // <dependency>
+	relation 157027 -_->
+	  stereotype "from"
+	  a package
+	    python "${type}"
+	    classrelation_ref 157283 // <dependency>
+	  b parent class_ref 136931 // ImportFormat
+      end
+
+      classrelation 157411 // <dependency>
+	relation 157155 -_->
+	  stereotype "from"
+	  a package
+	    python "${type}"
+	    classrelation_ref 157411 // <dependency>
+	  b parent class_ref 137059 // ExportFormat
+      end
+
+      classrelation 165219 // <dependency>
+	relation 164963 -_->
+	  stereotype "from"
+	  a package
+	    python "${type}"
+	    classrelation_ref 165219 // <dependency>
+	  b parent class_ref 128355 // BibTeXParser
+      end
+
+      attribute 131226 "referenceManager"
+	private type class_ref 143241 // ReferenceManager
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      classrelation 155908 // <dependency>
+	relation 155908 -_->
+	  stereotype "from"
+	  a package
+	    python "${type}"
+	    classrelation_ref 155908 // <dependency>
+	  b parent class_ref 143241 // ReferenceManager
+      end
+
+      classrelation 156036 // <dependency>
+	relation 156036 -_->
+	  stereotype "from"
+	  a package
+	    python "${type}"
+	    classrelation_ref 156036 // <dependency>
+	  b parent class_ref 135578 // FieldName
+      end
+
+      classrelation 156164 // <dependency>
+	relation 156164 -_->
+	  stereotype "from"
+	  a package
+	    python "${type}"
+	    classrelation_ref 156164 // <dependency>
+	  b parent class_ref 135945 // Entry
+      end
+    end
+
+    class 128483 "Article"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 128739 // <generalisation>
+	relation 128483 ---|>
+	  a public
+	    python "${type}"
+	    classrelation_ref 128739 // <generalisation>
+	  b parent class_ref 135945 // Entry
+      end
+
+      operation 160611 "__init__"
+	public explicit_return_type ""
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 159203 "toHTMLIEEETrans"
+	cpp_virtual public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 159331 "toHTMLACM"
+	cpp_virtual public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+    end
+
+    class 128611 "Book"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 128867 // <generalisation>
+	relation 128611 ---|>
+	  a public
+	    python "${type}"
+	    classrelation_ref 128867 // <generalisation>
+	  b parent class_ref 135945 // Entry
+      end
+
+      operation 160739 "__init__"
+	public explicit_return_type ""
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 146820 "generateKey"
+	public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 128867 "validate"
+	public explicit_return_type "bool"
+	nparams 1
+	  param in name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 159459 "toHTMLIEEETrans"
+	cpp_virtual public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 159587 "toHTMLACM"
+	cpp_virtual public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+    end
+
+    class 128026 "Booklet"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 128282 // <generalisation>
+	relation 128282 ---|>
+	  a public
+	    python "${type}"
+	    classrelation_ref 128282 // <generalisation>
+	  b parent class_ref 135945 // Entry
+      end
+
+      operation 128026 "__init__"
+	public explicit_return_type ""
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 146948 "generateKey"
+	public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 128154 "toHTMLIEEETrans"
+	cpp_virtual public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 128282 "toHTMLACM"
+	cpp_virtual public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+    end
+
+    class 128154 "Conference"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 128026 // <generalisation>
+	relation 128026 ---|>
+	  a public
+	    python "${type}"
+	    classrelation_ref 128026 // <generalisation>
+	  b parent class_ref 128739 // Inproceedings
+      end
+
+      operation 128538 "__init__"
+	public explicit_return_type ""
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+    end
+
+    class 156643 "EmptyEntry"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 150755 // <generalisation>
+	relation 150499 ---|>
+	  a public
+	    python "${type}"
+	    classrelation_ref 150755 // <generalisation>
+	  b parent class_ref 135945 // Entry
+      end
+
+      operation 160483 "__init__"
+	public explicit_return_type ""
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 158819 "validate"
+	public explicit_return_type "bool"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 158947 "toHTMLIEEETrans"
+	cpp_virtual public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 159075 "toHTMLACM"
+	cpp_virtual public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      classrelation 129540 // <dependency>
+	relation 129540 -_->
+	  stereotype "from"
+	  a package
+	    python "${type}"
+	    classrelation_ref 129540 // <dependency>
+	  b parent class_ref 136803 // EntryListColumn
+      end
+    end
+
+    class 128282 "Inbook"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      operation 129050 "__init__"
+	public explicit_return_type ""
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 147076 "validate"
+	public explicit_return_type "bool"
+	nparams 1
+	  param in name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 129178 "toHTMLIEEETrans"
+	cpp_virtual public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 129306 "toHTMLACM"
+	cpp_virtual public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      classrelation 162820 // <generalisation>
+	relation 162820 ---|>
+	  a public
+	    python "${type}"
+	    classrelation_ref 162820 // <generalisation>
+	  b parent class_ref 128611 // Book
+      end
+    end
+
+    class 128410 "Incollection"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 128666 // <generalisation>
+	relation 128666 ---|>
+	  a public
+	    python "${type}"
+	    classrelation_ref 128666 // <generalisation>
+	  b parent class_ref 135945 // Entry
+      end
+
+      operation 129562 "__init__"
+	public explicit_return_type ""
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 129690 "toHTMLIEEETrans"
+	cpp_virtual public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 129818 "toHTMLACM"
+	cpp_virtual public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+    end
+
+    class 128739 "Inproceedings"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 128995 // <generalisation>
+	relation 128739 ---|>
+	  a public
+	    python "${type}"
+	    classrelation_ref 128995 // <generalisation>
+	  b parent class_ref 135945 // Entry
+      end
+
+      operation 160867 "__init__"
+	public explicit_return_type ""
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 159715 "toHTMLIEEETrans"
+	cpp_virtual public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 159843 "toHTMLACM"
+	cpp_virtual public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+    end
+
+    class 128538 "Manual"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 129050 // <generalisation>
+	relation 129050 ---|>
+	  a public
+	    python "${type}"
+	    classrelation_ref 129050 // <generalisation>
+	  b parent class_ref 135945 // Entry
+      end
+
+      operation 130074 "__init__"
+	public explicit_return_type ""
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 147204 "generateKey"
+	public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 130202 "toHTMLIEEETrans"
+	cpp_virtual public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 130330 "toHTMLACM"
+	cpp_virtual public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+    end
+
+    class 128666 "Mastersthesis"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      operation 130586 "__init__"
+	public explicit_return_type ""
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 130714 "toHTMLIEEETrans"
+	cpp_virtual public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 130842 "toHTMLACM"
+	cpp_virtual public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      classrelation 162948 // <generalisation>
+	relation 162948 ---|>
+	  a public
+	    python "${type}"
+	    classrelation_ref 162948 // <generalisation>
+	  b parent class_ref 128867 // Phdthesis
+      end
+    end
+
+    class 128794 "Misc"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 128794 // <generalisation>
+	relation 128794 ---|>
+	  a public
+	    python "${type}"
+	    classrelation_ref 128794 // <generalisation>
+	  b parent class_ref 135945 // Entry
+      end
+
+      operation 131098 "__init__"
+	public explicit_return_type ""
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 131226 "toHTMLIEEETrans"
+	cpp_virtual public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 131354 "toHTMLACM"
+	cpp_virtual public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+    end
+
+    class 128867 "Phdthesis"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 129123 // <generalisation>
+	relation 128867 ---|>
+	  a public
+	    python "${type}"
+	    classrelation_ref 129123 // <generalisation>
+	  b parent class_ref 135945 // Entry
+      end
+
+      operation 160995 "__init__"
+	public explicit_return_type ""
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 159971 "toHTMLIEEETrans"
+	cpp_virtual public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 160099 "toHTMLACM"
+	cpp_virtual public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+    end
+
+    class 128922 "Proceedings"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 128154 // <generalisation>
+	relation 128154 ---|>
+	  a public
+	    python "${type}"
+	    classrelation_ref 128154 // <generalisation>
+	  b parent class_ref 135945 // Entry
+      end
+
+      operation 131610 "__init__"
+	public explicit_return_type ""
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 147332 "generateKey"
+	public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 131738 "toHTMLIEEETrans"
+	cpp_virtual public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 131866 "toHTMLACM"
+	cpp_virtual public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+    end
+
+    class 128995 "Techreport"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 129251 // <generalisation>
+	relation 128995 ---|>
+	  a public
+	    python "${type}"
+	    classrelation_ref 129251 // <generalisation>
+	  b parent class_ref 135945 // Entry
+      end
+
+      operation 161123 "__init__"
+	public explicit_return_type ""
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 160227 "toHTMLIEEETrans"
+	cpp_virtual public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 160355 "toHTMLACM"
+	cpp_virtual public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+    end
+
+    class 129050 "Unpublished"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 128410 // <generalisation>
+	relation 128410 ---|>
+	  a public
+	    python "${type}"
+	    classrelation_ref 128410 // <generalisation>
+	  b parent class_ref 135945 // Entry
+      end
+
+      operation 132122 "__init__"
+	public explicit_return_type ""
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 132250 "toHTMLIEEETrans"
+	cpp_virtual public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 132378 "toHTMLACM"
+	cpp_virtual public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+    end
+
+    class 128004 "Author"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      operation 128900 "__init__"
+	public explicit_return_type ""
+	nparams 2
+	  param inout name "self" explicit_type ""
+	  param in name "value" explicit_type "string"
+	    defaultvalue "''"
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}, ${p1}${v1}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      classrelation 146052 // <generalisation>
+	relation 146052 ---|>
+	  a public
+	    python "${type}"
+	    classrelation_ref 146052 // <generalisation>
+	  b parent class_ref 137732 // ContributorField
+      end
+    end
+
+    class 128516 "Editor"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      operation 129540 "__init__"
+	public explicit_return_type ""
+	nparams 2
+	  param inout name "self" explicit_type ""
+	  param in name "value" explicit_type "string"
+	    defaultvalue "''"
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}, ${p1}${v1}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      classrelation 145924 // <generalisation>
+	relation 145924 ---|>
+	  a public
+	    python "${type}"
+	    classrelation_ref 145924 // <generalisation>
+	  b parent class_ref 137732 // ContributorField
+      end
+    end
+
+    class 129540 "Pages"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 137604 // <generalisation>
+	relation 137604 ---|>
+	  a public
+	    python "${type}"
+	    classrelation_ref 137604 // <generalisation>
+	  b parent class_ref 128227 // Field
+      end
+
+      operation 131716 "__init__"
+	public explicit_return_type ""
+	nparams 2
+	  param inout name "self" explicit_type ""
+	  param in name "value" explicit_type "string"
+	    defaultvalue "''"
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}, ${p1}${v1}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 131972 "format"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+    end
+
+    class 144388 "Organization"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 162692 // <generalisation>
+	relation 162692 ---|>
+	  a public
+	    python "${type}"
+	    classrelation_ref 162692 // <generalisation>
+	  b parent class_ref 128227 // Field
+      end
+
+      operation 146564 "__init__"
+	public explicit_return_type ""
+	nparams 2
+	  param inout name "self" explicit_type ""
+	  param in name "value" explicit_type "string"
+	    defaultvalue "''"
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}, ${p1}${v1}${)}:
+${docstring}super(${class}, ${p0}).__init__()
+${body}
+"
+	
+      end
+
+      operation 146692 "getFirstWord"
+	public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+    end
+
+    class 130564 "Year"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 138756 // <generalisation>
+	relation 138756 ---|>
+	  a public
+	    python "${type}"
+	    classrelation_ref 138756 // <generalisation>
+	  b parent class_ref 128227 // Field
+      end
+
+      operation 130820 "__init__"
+	public explicit_return_type ""
+	nparams 2
+	  param inout name "self" explicit_type ""
+	  param in name "value" explicit_type "string"
+	    defaultvalue "''"
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}, ${p1}${v1}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 132100 "getYear"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+    end
+
+    class 137732 "ContributorField"
+      abstract visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 146180 // <generalisation>
+	relation 146180 ---|>
+	  a public
+	    python "${type}"
+	    classrelation_ref 146180 // <generalisation>
+	  b parent class_ref 128227 // Field
+      end
+
+      operation 139524 "__init__"
+	public explicit_return_type ""
+	nparams 2
+	  param inout name "self" explicit_type ""
+	  param in name "value" explicit_type "string"
+	    defaultvalue "''"
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}, ${p1}${v1}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 139652 "format"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      classrelation 146308 // contributors (<directional composition>)
+	relation 146308 *-->
+	  stereotype "list"
+	  a role_name "contributors" multiplicity "*" protected
+	    python "${comment}${self}${name} = ${stereotype}()
+"
+	    classrelation_ref 146308 // contributors (<directional composition>)
+	  b parent class_ref 137860 // Contributor
+      end
+
+      operation 139908 "getContributors"
+	public return_type class_ref 137860 // Contributor
+	multiplicity "*"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+
+      operation 140036 "getFirstLastName"
+	public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+    end
+
+    class 137860 "Contributor"
+      visibility package stereotype "struct"
+      cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl "${comment}struct ${name} {
+${members}};
+"
+      explicit_switch_type ""
+      
+      attribute 134532 "first_name"
+	public explicit_type "string"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 134660 "last_name"
+	public explicit_type "string"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 134788 "preposition"
+	public explicit_type "string"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      attribute 134916 "suffix"
+	public explicit_type "string"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl "${comment}${self}${name} = ${value}
+"
+	idl_decl ""
+      end
+
+      operation 139780 "__str__"
+	public explicit_return_type "string"
+	nparams 1
+	  param inout name "self" explicit_type ""
+	
+	
+	
+	python_def "${@}${static}${abstract}def ${name}${(}${p0}${v0}${)}:
+${docstring}${body}
+"
+	
+      end
+    end
+  end
+
+  classview 134755 "Sequence"
+    //class diagram settings
+    draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+    //collaboration diagram settings
+    show_full_operations_definition default show_hierarchical_rank default write_horizontally default class_drawing_mode default drawing_language default package_name_in_tab default show_context default show_msg_context default draw_all_relations default shadow default show_stereotype_properties default
+    //object diagram settings
+     write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+    //sequence diagram settings
+    show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+    //state diagram settings
+    package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+    show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+    //class settings
+    //activity diagram settings
+    package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+    show_infonote default drawing_language default show_stereotype_properties default
+    sequencediagram 142114 "Import"
+      show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+      overlapping_bars size A4
+    end
+
+    sequencediagram 141986 "Sort"
+      show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+      overlapping_bars size A4
+    end
+
+    sequencediagram 141858 "Search"
+      show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+      overlapping_bars size A4
+    end
+
+    sequencediagram 141602 "Export"
+      show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+      overlapping_bars size A4
+    end
+
+    sequencediagram 141474 "Preview"
+      show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+      overlapping_bars size A4
+    end
+
+    sequencediagram 141346 "Duplicate"
+      show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+      overlapping_bars size A4
+    end
+
+    sequencediagram 141218 "Delete"
+      show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+      overlapping_bars size A4
+    end
+
+    sequencediagram 141090 "Edit"
+      show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+      overlapping_bars size A4
+    end
+
+    sequencediagram 134562 "Add"
+      show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+      overlapping_bars size A4
+    end
+  end
+
+  deploymentview 134562 "Deployment"
+    //deployment diagram settings
+    package_name_in_tab default show_context default write_horizontally default auto_label_position default draw_all_relations default shadow default
+    draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+    artifact 128483 "user_interface"
+      stereotype "source"
+      python_src "${comment}
+${import}
+${definition}"
+      associated_classes
+	class_ref 128009 // UserInterface
+      end
+    end
+
+    artifact 128611 "entry"
+      stereotype "source"
+      python_src "${comment}
+${import}
+${definition}"
+      associated_classes
+	class_ref 135945 // Entry
+	class_ref 156643 // EmptyEntry
+	class_ref 128483 // Article
+	class_ref 128611 // Book
+	class_ref 128026 // Booklet
+	class_ref 128282 // Inbook
+	class_ref 128410 // Incollection
+	class_ref 128739 // Inproceedings
+	class_ref 128154 // Conference
+	class_ref 128538 // Manual
+	class_ref 128794 // Misc
+	class_ref 128867 // Phdthesis
+	class_ref 128666 // Mastersthesis
+	class_ref 128922 // Proceedings
+	class_ref 128995 // Techreport
+	class_ref 129050 // Unpublished
+      end
+    end
+
+    artifact 128739 "reference_manager"
+      stereotype "source"
+      python_src "${comment}
+${import}
+${definition}"
+      associated_classes
+	class_ref 143241 // ReferenceManager
+      end
+    end
+
+    artifact 135523 "bibtex_parser"
+      stereotype "source"
+      python_src "${comment}
+${import}
+${definition}"
+      associated_classes
+	class_ref 128355 // BibTeXParser
+      end
+    end
+
+    artifact 136419 "impex"
+      stereotype "source"
+      python_src "${comment}
+${import}
+${definition}"
+      associated_classes
+	class_ref 142106 // ImpEx
+	class_ref 129635 // Importer
+	class_ref 129123 // Exporter
+      end
+    end
+
+    artifact 136547 "__init__"
+      stereotype "source"
+      python_src "${comment}
+${import}
+${definition}"
+      associated_classes
+	class_ref 150115 // __init__
+      end
+    end
+
+    artifact 128026 "field"
+      stereotype "source"
+      python_src "${comment}
+${import}
+${definition}"
+      associated_classes
+	class_ref 128227 // Field
+	class_ref 137860 // Contributor
+	class_ref 137732 // ContributorField
+	class_ref 128004 // Author
+	class_ref 128516 // Editor
+	class_ref 144388 // Organization
+	class_ref 129540 // Pages
+	class_ref 130564 // Year
+      end
+    end
+
+    artifact 128132 "field_name"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      php_src "<?php
+${comment}
+${namespace}
+${require_once}
+${definition}
+?>
+"
+      python_src "${comment}
+${import}
+${definition}"
+      idl_src "#ifndef ${MODULE}_${NAME}_H
+#define ${MODULE}_${NAME}_H
+
+${comment}
+${includes}
+${module_start}
+${definition}
+${module_end}
+#endif
+"
+      associated_classes
+	class_ref 135578 // FieldName
+      end
+    end
+  end
+end

@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>gui.app_interface</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="gui-module.html">Package&nbsp;gui</a> ::
+        Module&nbsp;app_interface
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="gui.app_interface-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="gui.app_interface-module.html">Module gui.app_interface</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno">  1</tt>  <tt class="py-line"><tt class="py-docstring">'''</tt> </tt>
+<a name="L2"></a><tt class="py-lineno">  2</tt>  <tt class="py-line"><tt class="py-docstring">Created on Jan 13, 2014</tt> </tt>
+<a name="L3"></a><tt class="py-lineno">  3</tt>  <tt class="py-line"><tt class="py-docstring">@author: Eugene Syriani</tt> </tt>
+<a name="L4"></a><tt class="py-lineno">  4</tt>  <tt class="py-line"><tt class="py-docstring">@version: 0.2.5</tt> </tt>
+<a name="L5"></a><tt class="py-lineno">  5</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L6"></a><tt class="py-lineno">  6</tt>  <tt class="py-line"><tt class="py-docstring">This module represents the interface that the L{app} module must conform to.</tt> </tt>
+<a name="L7"></a><tt class="py-lineno">  7</tt>  <tt class="py-line"><tt class="py-docstring">@group Interchange data-structures: EntryDict, EntryListColumn</tt> </tt>
+<a name="L8"></a><tt class="py-lineno">  8</tt>  <tt class="py-line"><tt class="py-docstring">@sort: EntryDict, EntryListColumn</tt> </tt>
+<a name="L9"></a><tt class="py-lineno">  9</tt>  <tt class="py-line"><tt class="py-docstring">'''</tt> </tt>
+<a name="EntryListColumn"></a><div id="EntryListColumn-def"><a name="L10"></a><tt class="py-lineno"> 10</tt>  <tt class="py-line"> </tt>
+<a name="L11"></a><tt class="py-lineno"> 11</tt> <a class="py-toggle" href="#" id="EntryListColumn-toggle" onclick="return toggle('EntryListColumn');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="gui.app_interface.EntryListColumn-class.html">EntryListColumn</a><tt class="py-op">(</tt><tt class="py-base-class">object</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="EntryListColumn-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="EntryListColumn-expanded"><a name="L12"></a><tt class="py-lineno"> 12</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
+<a name="L13"></a><tt class="py-lineno"> 13</tt>  <tt class="py-line"><tt class="py-docstring">    The columns of the entry list.</tt> </tt>
+<a name="L14"></a><tt class="py-lineno"> 14</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
+<a name="L15"></a><tt class="py-lineno"> 15</tt>  <tt class="py-line">    <tt id="link-0" class="py-name" targets="Variable gui.app_interface.EntryListColumn.AUTHOR=gui.app_interface.EntryListColumn-class.html#AUTHOR"><a title="gui.app_interface.EntryListColumn.AUTHOR" class="py-name" href="#" onclick="return doclink('link-0', 'AUTHOR', 'link-0');">AUTHOR</a></tt> <tt class="py-op">=</tt> <tt class="py-string">'author'</tt> </tt>
+<a name="L16"></a><tt class="py-lineno"> 16</tt>  <tt class="py-line">    <tt id="link-1" class="py-name" targets="Variable gui.app_interface.EntryListColumn.ID=gui.app_interface.EntryListColumn-class.html#ID"><a title="gui.app_interface.EntryListColumn.ID" class="py-name" href="#" onclick="return doclink('link-1', 'ID', 'link-1');">ID</a></tt> <tt class="py-op">=</tt> <tt class="py-string">'id'</tt> </tt>
+<a name="L17"></a><tt class="py-lineno"> 17</tt>  <tt class="py-line">    <tt id="link-2" class="py-name" targets="Variable gui.app_interface.EntryListColumn.KEY=gui.app_interface.EntryListColumn-class.html#KEY"><a title="gui.app_interface.EntryListColumn.KEY" class="py-name" href="#" onclick="return doclink('link-2', 'KEY', 'link-2');">KEY</a></tt> <tt class="py-op">=</tt> <tt class="py-string">'key'</tt> </tt>
+<a name="L18"></a><tt class="py-lineno"> 18</tt>  <tt class="py-line">    <tt id="link-3" class="py-name" targets="Variable gui.app_interface.EntryListColumn.PAPER=gui.app_interface.EntryListColumn-class.html#PAPER"><a title="gui.app_interface.EntryListColumn.PAPER" class="py-name" href="#" onclick="return doclink('link-3', 'PAPER', 'link-3');">PAPER</a></tt> <tt class="py-op">=</tt> <tt class="py-string">'paper'</tt> </tt>
+<a name="L19"></a><tt class="py-lineno"> 19</tt>  <tt class="py-line">    <tt id="link-4" class="py-name" targets="Variable gui.app_interface.EntryListColumn.TITLE=gui.app_interface.EntryListColumn-class.html#TITLE"><a title="gui.app_interface.EntryListColumn.TITLE" class="py-name" href="#" onclick="return doclink('link-4', 'TITLE', 'link-4');">TITLE</a></tt> <tt class="py-op">=</tt> <tt class="py-string">'title'</tt> </tt>
+<a name="L20"></a><tt class="py-lineno"> 20</tt>  <tt class="py-line">    <tt id="link-5" class="py-name" targets="Variable gui.app_interface.EntryListColumn.TYPE=gui.app_interface.EntryListColumn-class.html#TYPE"><a title="gui.app_interface.EntryListColumn.TYPE" class="py-name" href="#" onclick="return doclink('link-5', 'TYPE', 'link-5');">TYPE</a></tt> <tt class="py-op">=</tt> <tt class="py-string">'type'</tt> </tt>
+<a name="L21"></a><tt class="py-lineno"> 21</tt>  <tt class="py-line">    <tt id="link-6" class="py-name" targets="Variable gui.app_interface.EntryListColumn.YEAR=gui.app_interface.EntryListColumn-class.html#YEAR"><a title="gui.app_interface.EntryListColumn.YEAR" class="py-name" href="#" onclick="return doclink('link-6', 'YEAR', 'link-6');">YEAR</a></tt> <tt class="py-op">=</tt> <tt class="py-string">'year'</tt> </tt>
+<a name="L22"></a><tt class="py-lineno"> 22</tt>  <tt class="py-line">    <tt class="py-decorator">@</tt><tt class="py-decorator">staticmethod</tt> </tt>
+<a name="EntryListColumn.list"></a><div id="EntryListColumn.list-def"><a name="L23"></a><tt class="py-lineno"> 23</tt> <a class="py-toggle" href="#" id="EntryListColumn.list-toggle" onclick="return toggle('EntryListColumn.list');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="gui.app_interface.EntryListColumn-class.html#list">list</a><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="EntryListColumn.list-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="EntryListColumn.list-expanded"><a name="L24"></a><tt class="py-lineno"> 24</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L25"></a><tt class="py-lineno"> 25</tt>  <tt class="py-line"><tt class="py-docstring">        @rtype: L{list}</tt> </tt>
+<a name="L26"></a><tt class="py-lineno"> 26</tt>  <tt class="py-line"><tt class="py-docstring">        @return: A list of all the columns.</tt> </tt>
+<a name="L27"></a><tt class="py-lineno"> 27</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L28"></a><tt class="py-lineno"> 28</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-op">[</tt><tt id="link-7" class="py-name" targets="Class gui.app_interface.EntryListColumn=gui.app_interface.EntryListColumn-class.html"><a title="gui.app_interface.EntryListColumn" class="py-name" href="#" onclick="return doclink('link-7', 'EntryListColumn', 'link-7');">EntryListColumn</a></tt><tt class="py-op">.</tt><tt id="link-8" class="py-name"><a title="gui.app_interface.EntryListColumn.AUTHOR" class="py-name" href="#" onclick="return doclink('link-8', 'AUTHOR', 'link-0');">AUTHOR</a></tt><tt class="py-op">,</tt> <tt id="link-9" class="py-name"><a title="gui.app_interface.EntryListColumn" class="py-name" href="#" onclick="return doclink('link-9', 'EntryListColumn', 'link-7');">EntryListColumn</a></tt><tt class="py-op">.</tt><tt id="link-10" class="py-name"><a title="gui.app_interface.EntryListColumn.ID" class="py-name" href="#" onclick="return doclink('link-10', 'ID', 'link-1');">ID</a></tt><tt class="py-op">,</tt> <tt id="link-11" class="py-name"><a title="gui.app_interface.EntryListColumn" class="py-name" href="#" onclick="return doclink('link-11', 'EntryListColumn', 'link-7');">EntryListColumn</a></tt><tt class="py-op">.</tt><tt id="link-12" class="py-name"><a title="gui.app_interface.EntryListColumn.KEY" class="py-name" href="#" onclick="return doclink('link-12', 'KEY', 'link-2');">KEY</a></tt><tt class="py-op">,</tt> <tt id="link-13" class="py-name"><a title="gui.app_interface.EntryListColumn" class="py-name" href="#" onclick="return doclink('link-13', 'EntryListColumn', 'link-7');">EntryListColumn</a></tt><tt class="py-op">.</tt><tt id="link-14" class="py-name"><a title="gui.app_interface.EntryListColumn.PAPER" class="py-name" href="#" onclick="return doclink('link-14', 'PAPER', 'link-3');">PAPER</a></tt><tt class="py-op">,</tt> </tt>
+<a name="L29"></a><tt class="py-lineno"> 29</tt>  <tt class="py-line">                <tt id="link-15" class="py-name"><a title="gui.app_interface.EntryListColumn" class="py-name" href="#" onclick="return doclink('link-15', 'EntryListColumn', 'link-7');">EntryListColumn</a></tt><tt class="py-op">.</tt><tt id="link-16" class="py-name"><a title="gui.app_interface.EntryListColumn.TITLE" class="py-name" href="#" onclick="return doclink('link-16', 'TITLE', 'link-4');">TITLE</a></tt><tt class="py-op">,</tt> <tt id="link-17" class="py-name"><a title="gui.app_interface.EntryListColumn" class="py-name" href="#" onclick="return doclink('link-17', 'EntryListColumn', 'link-7');">EntryListColumn</a></tt><tt class="py-op">.</tt><tt id="link-18" class="py-name"><a title="gui.app_interface.EntryListColumn.TYPE" class="py-name" href="#" onclick="return doclink('link-18', 'TYPE', 'link-5');">TYPE</a></tt><tt class="py-op">,</tt> <tt id="link-19" class="py-name"><a title="gui.app_interface.EntryListColumn" class="py-name" href="#" onclick="return doclink('link-19', 'EntryListColumn', 'link-7');">EntryListColumn</a></tt><tt class="py-op">.</tt><tt id="link-20" class="py-name"><a title="gui.app_interface.EntryListColumn.YEAR" class="py-name" href="#" onclick="return doclink('link-20', 'YEAR', 'link-6');">YEAR</a></tt><tt class="py-op">]</tt> </tt>
+</div></div><a name="L30"></a><tt class="py-lineno"> 30</tt>  <tt class="py-line"> </tt>
+<a name="EntryDict"></a><div id="EntryDict-def"><a name="L31"></a><tt class="py-lineno"> 31</tt> <a class="py-toggle" href="#" id="EntryDict-toggle" onclick="return toggle('EntryDict');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="gui.app_interface.EntryDict-class.html">EntryDict</a><tt class="py-op">(</tt><tt class="py-base-class">dict</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="EntryDict-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="EntryDict-expanded"><a name="L32"></a><tt class="py-lineno"> 32</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
+<a name="L33"></a><tt class="py-lineno"> 33</tt>  <tt class="py-line"><tt class="py-docstring">    The exchange format of entries.</tt> </tt>
+<a name="L34"></a><tt class="py-lineno"> 34</tt>  <tt class="py-line"><tt class="py-docstring">    It is a dictionary where all L{EntryListColumn} fields are predefined keys that cannot be removed.</tt> </tt>
+<a name="L35"></a><tt class="py-lineno"> 35</tt>  <tt class="py-line"><tt class="py-docstring">    </tt> </tt>
+<a name="L36"></a><tt class="py-lineno"> 36</tt>  <tt class="py-line"><tt class="py-docstring">        &gt;&gt;&gt; d = EntryDict()</tt> </tt>
+<a name="L37"></a><tt class="py-lineno"> 37</tt>  <tt class="py-line"><tt class="py-docstring">        &gt;&gt;&gt; print d</tt> </tt>
+<a name="L38"></a><tt class="py-lineno"> 38</tt>  <tt class="py-line"><tt class="py-docstring">            {'id': '', ...}</tt> </tt>
+<a name="L39"></a><tt class="py-lineno"> 39</tt>  <tt class="py-line"><tt class="py-docstring">        &gt;&gt;&gt; del d[EntryListColumn.ID]</tt> </tt>
+<a name="L40"></a><tt class="py-lineno"> 40</tt>  <tt class="py-line"><tt class="py-docstring">        &gt;&gt;&gt; print d</tt> </tt>
+<a name="L41"></a><tt class="py-lineno"> 41</tt>  <tt class="py-line"><tt class="py-docstring">            {'id': '', ...}</tt> </tt>
+<a name="L42"></a><tt class="py-lineno"> 42</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
+<a name="EntryDict.__init__"></a><div id="EntryDict.__init__-def"><a name="L43"></a><tt class="py-lineno"> 43</tt> <a class="py-toggle" href="#" id="EntryDict.__init__-toggle" onclick="return toggle('EntryDict.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="gui.app_interface.EntryDict-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-op">*</tt><tt class="py-param">args</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="EntryDict.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="EntryDict.__init__-expanded"><a name="L44"></a><tt class="py-lineno"> 44</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L45"></a><tt class="py-lineno"> 45</tt>  <tt class="py-line"><tt class="py-docstring">        All L{EntryListColumn} fields are predefined keys.</tt> </tt>
+<a name="L46"></a><tt class="py-lineno"> 46</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L47"></a><tt class="py-lineno"> 47</tt>  <tt class="py-line">        <tt class="py-name">dict</tt><tt class="py-op">.</tt><tt id="link-21" class="py-name" targets="Method app.statechart.BiBler_Statechart.__init__()=app.statechart.BiBler_Statechart-class.html#__init__,Method app.statechart.EventList.__init__()=app.statechart.EventList-class.html#__init__,Method app.statechart.Hierarchy.__init__()=app.statechart.Hierarchy-class.html#__init__,Method app.statechart.History.__init__()=app.statechart.History-class.html#__init__,Method app.statechart.IntList.__init__()=app.statechart.IntList-class.html#__init__,Method app.statechart.State.__init__()=app.statechart.State-class.html#__init__,Method app.statechart.StringList.__init__()=app.statechart.StringList-class.html#__init__,Method gui.app_interface.EntryDict.__init__()=gui.app_interface.EntryDict-class.html#__init__,Method gui.controller.Controller.__init__()=gui.controller.Controller-class.html#__init__,Method gui.controller.ControllerData.__init__()=gui.controller.ControllerData-class.html#__init__,Method gui.controller.ControllerLogicException.__init__()=gui.controller.ControllerLogicException-class.html#__init__,Method gui.gui.ActionCancelDialog.__init__()=gui.gui.ActionCancelDialog-class.html#__init__,Method gui.gui.EditorTab.__init__()=gui.gui.EditorTab-class.html#__init__,Method gui.gui.EntryEditor.__init__()=gui.gui.EntryEditor-class.html#__init__,Method gui.gui.EntryList.__init__()=gui.gui.EntryList-class.html#__init__,Method gui.gui.EntryPreviewer.__init__()=gui.gui.EntryPreviewer-class.html#__init__,Method gui.gui.EntryWidget.__init__()=gui.gui.EntryWidget-class.html#__init__,Method gui.gui.HTMLDialog.__init__()=gui.gui.HTMLDialog-class.html#__init__,Method gui.gui.HTMLWindow.__init__()=gui.gui.HTMLWindow-class.html#__init__,Method gui.gui.MainWindow.__init__()=gui.gui.MainWindow-class.html#__init__,Method gui.gui.PreferencesDialog.__init__()=gui.gui.PreferencesDialog-class.html#__init__,Method gui.gui.SearchDialog.__init__()=gui.gui.SearchDialog-class.html#__init__,Method utils.resourcemgr.ResourceManager.__init__()=utils.resourcemgr.ResourceManager-class.html#__init__,Method utils.settings.Preferences.__init__()=utils.settings.Preferences-class.html#__init__,Method utils.utils.Singleton.__init__()=utils.utils.Singleton-class.html#__init__"><a title="app.statechart.BiBler_Statechart.__init__
+app.statechart.EventList.__init__
+app.statechart.Hierarchy.__init__
+app.statechart.History.__init__
+app.statechart.IntList.__init__
+app.statechart.State.__init__
+app.statechart.StringList.__init__
+gui.app_interface.EntryDict.__init__
+gui.controller.Controller.__init__
+gui.controller.ControllerData.__init__
+gui.controller.ControllerLogicException.__init__
+gui.gui.ActionCancelDialog.__init__
+gui.gui.EditorTab.__init__
+gui.gui.EntryEditor.__init__
+gui.gui.EntryList.__init__
+gui.gui.EntryPreviewer.__init__
+gui.gui.EntryWidget.__init__
+gui.gui.HTMLDialog.__init__
+gui.gui.HTMLWindow.__init__
+gui.gui.MainWindow.__init__
+gui.gui.PreferencesDialog.__init__
+gui.gui.SearchDialog.__init__
+utils.resourcemgr.ResourceManager.__init__
+utils.settings.Preferences.__init__
+utils.utils.Singleton.__init__" class="py-name" href="#" onclick="return doclink('link-21', '__init__', 'link-21');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt> <tt class="py-name">args</tt><tt class="py-op">)</tt> </tt>
+<a name="L48"></a><tt class="py-lineno"> 48</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">key</tt> <tt class="py-keyword">in</tt> <tt id="link-22" class="py-name"><a title="gui.app_interface.EntryListColumn" class="py-name" href="#" onclick="return doclink('link-22', 'EntryListColumn', 'link-7');">EntryListColumn</a></tt><tt class="py-op">.</tt><tt id="link-23" class="py-name" targets="Static Method gui.app_interface.EntryListColumn.list()=gui.app_interface.EntryListColumn-class.html#list"><a title="gui.app_interface.EntryListColumn.list" class="py-name" href="#" onclick="return doclink('link-23', 'list', 'link-23');">list</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L49"></a><tt class="py-lineno"> 49</tt>  <tt class="py-line">            <tt class="py-keyword">if</tt> <tt class="py-name">key</tt> <tt class="py-keyword">not</tt> <tt class="py-keyword">in</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">iterkeys</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L50"></a><tt class="py-lineno"> 50</tt>  <tt class="py-line">                <tt class="py-keyword">if</tt> <tt class="py-name">key</tt> <tt class="py-op">==</tt> <tt id="link-24" class="py-name"><a title="gui.app_interface.EntryListColumn" class="py-name" href="#" onclick="return doclink('link-24', 'EntryListColumn', 'link-7');">EntryListColumn</a></tt><tt class="py-op">.</tt><tt id="link-25" class="py-name"><a title="gui.app_interface.EntryListColumn.ID" class="py-name" href="#" onclick="return doclink('link-25', 'ID', 'link-1');">ID</a></tt><tt class="py-op">:</tt> </tt>
+<a name="L51"></a><tt class="py-lineno"> 51</tt>  <tt class="py-line">                    <tt class="py-name">self</tt><tt class="py-op">[</tt><tt class="py-name">key</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-number">0</tt> </tt>
+<a name="L52"></a><tt class="py-lineno"> 52</tt>  <tt class="py-line">                <tt class="py-keyword">else</tt><tt class="py-op">:</tt> </tt>
+<a name="L53"></a><tt class="py-lineno"> 53</tt>  <tt class="py-line">                    <tt class="py-name">self</tt><tt class="py-op">[</tt><tt class="py-name">key</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-string">''</tt> </tt>
+</div><a name="L54"></a><tt class="py-lineno"> 54</tt>  <tt class="py-line">         </tt>
+<a name="EntryDict.__delitem__"></a><div id="EntryDict.__delitem__-def"><a name="L55"></a><tt class="py-lineno"> 55</tt> <a class="py-toggle" href="#" id="EntryDict.__delitem__-toggle" onclick="return toggle('EntryDict.__delitem__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="gui.app_interface.EntryDict-class.html#__delitem__">__delitem__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">key</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="EntryDict.__delitem__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="EntryDict.__delitem__-expanded"><a name="L56"></a><tt class="py-lineno"> 56</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L57"></a><tt class="py-lineno"> 57</tt>  <tt class="py-line"><tt class="py-docstring">        Deleting a L{EntryListColumn} key will set its value to C{''}.</tt> </tt>
+<a name="L58"></a><tt class="py-lineno"> 58</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L59"></a><tt class="py-lineno"> 59</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">key</tt> <tt class="py-keyword">not</tt> <tt class="py-keyword">in</tt> <tt id="link-26" class="py-name"><a title="gui.app_interface.EntryListColumn" class="py-name" href="#" onclick="return doclink('link-26', 'EntryListColumn', 'link-7');">EntryListColumn</a></tt><tt class="py-op">.</tt><tt id="link-27" class="py-name"><a title="gui.app_interface.EntryListColumn.list" class="py-name" href="#" onclick="return doclink('link-27', 'list', 'link-23');">list</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L60"></a><tt class="py-lineno"> 60</tt>  <tt class="py-line">            <tt class="py-name">dict</tt><tt class="py-op">.</tt><tt id="link-28" class="py-name" targets="Method gui.app_interface.EntryDict.__delitem__()=gui.app_interface.EntryDict-class.html#__delitem__"><a title="gui.app_interface.EntryDict.__delitem__" class="py-name" href="#" onclick="return doclink('link-28', '__delitem__', 'link-28');">__delitem__</a></tt><tt class="py-op">(</tt><tt class="py-name">key</tt><tt class="py-op">)</tt> </tt>
+<a name="L61"></a><tt class="py-lineno"> 61</tt>  <tt class="py-line">        <tt class="py-keyword">elif</tt> <tt class="py-name">key</tt> <tt class="py-op">==</tt> <tt id="link-29" class="py-name"><a title="gui.app_interface.EntryListColumn" class="py-name" href="#" onclick="return doclink('link-29', 'EntryListColumn', 'link-7');">EntryListColumn</a></tt><tt class="py-op">.</tt><tt id="link-30" class="py-name"><a title="gui.app_interface.EntryListColumn.ID" class="py-name" href="#" onclick="return doclink('link-30', 'ID', 'link-1');">ID</a></tt><tt class="py-op">:</tt> </tt>
+<a name="L62"></a><tt class="py-lineno"> 62</tt>  <tt class="py-line">            <tt class="py-keyword">raise</tt> <tt class="py-name">KeyError</tt><tt class="py-op">(</tt><tt class="py-string">'Cannot delete key: '</tt> <tt class="py-op">+</tt> <tt id="link-31" class="py-name"><a title="gui.app_interface.EntryListColumn" class="py-name" href="#" onclick="return doclink('link-31', 'EntryListColumn', 'link-7');">EntryListColumn</a></tt><tt class="py-op">.</tt><tt id="link-32" class="py-name"><a title="gui.app_interface.EntryListColumn.ID" class="py-name" href="#" onclick="return doclink('link-32', 'ID', 'link-1');">ID</a></tt><tt class="py-op">)</tt> </tt>
+<a name="L63"></a><tt class="py-lineno"> 63</tt>  <tt class="py-line">        <tt class="py-keyword">else</tt><tt class="py-op">:</tt> </tt>
+<a name="L64"></a><tt class="py-lineno"> 64</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">[</tt><tt class="py-name">key</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-string">''</tt> </tt>
+</div><a name="L65"></a><tt class="py-lineno"> 65</tt>  <tt class="py-line">     </tt>
+<a name="L66"></a><tt class="py-lineno"> 66</tt>  <tt class="py-line">    <tt class="py-decorator">@</tt><tt class="py-decorator">staticmethod</tt> </tt>
+<a name="EntryDict.fromDict"></a><div id="EntryDict.fromDict-def"><a name="L67"></a><tt class="py-lineno"> 67</tt> <a class="py-toggle" href="#" id="EntryDict.fromDict-toggle" onclick="return toggle('EntryDict.fromDict');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="gui.app_interface.EntryDict-class.html#fromDict">fromDict</a><tt class="py-op">(</tt><tt class="py-param">d</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="EntryDict.fromDict-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="EntryDict.fromDict-expanded"><a name="L68"></a><tt class="py-lineno"> 68</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L69"></a><tt class="py-lineno"> 69</tt>  <tt class="py-line"><tt class="py-docstring">        Convert a Python L{dict} into an L{EntryDict}.</tt> </tt>
+<a name="L70"></a><tt class="py-lineno"> 70</tt>  <tt class="py-line"><tt class="py-docstring">        @type d: L{dict}</tt> </tt>
+<a name="L71"></a><tt class="py-lineno"> 71</tt>  <tt class="py-line"><tt class="py-docstring">        @param d: The dictionary to convert.</tt> </tt>
+<a name="L72"></a><tt class="py-lineno"> 72</tt>  <tt class="py-line"><tt class="py-docstring">        @rtype: L{EntryDict}</tt> </tt>
+<a name="L73"></a><tt class="py-lineno"> 73</tt>  <tt class="py-line"><tt class="py-docstring">        @return: An L{EntryDict} with all the keys and values from C{d}.</tt> </tt>
+<a name="L74"></a><tt class="py-lineno"> 74</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L75"></a><tt class="py-lineno"> 75</tt>  <tt class="py-line">        <tt class="py-name">ed</tt> <tt class="py-op">=</tt> <tt id="link-33" class="py-name" targets="Class gui.app_interface.EntryDict=gui.app_interface.EntryDict-class.html"><a title="gui.app_interface.EntryDict" class="py-name" href="#" onclick="return doclink('link-33', 'EntryDict', 'link-33');">EntryDict</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L76"></a><tt class="py-lineno"> 76</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">k</tt> <tt class="py-keyword">in</tt> <tt class="py-name">d</tt><tt class="py-op">:</tt> </tt>
+<a name="L77"></a><tt class="py-lineno"> 77</tt>  <tt class="py-line">            <tt class="py-name">ed</tt><tt class="py-op">[</tt><tt class="py-name">k</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">d</tt><tt class="py-op">[</tt><tt class="py-name">k</tt><tt class="py-op">]</tt> </tt>
+<a name="L78"></a><tt class="py-lineno"> 78</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">ed</tt> </tt>
+</div></div><a name="L79"></a><tt class="py-lineno"> 79</tt>  <tt class="py-line"> </tt>
+<a name="IApplication"></a><div id="IApplication-def"><a name="L80"></a><tt class="py-lineno"> 80</tt> <a class="py-toggle" href="#" id="IApplication-toggle" onclick="return toggle('IApplication');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="gui.app_interface.IApplication-class.html">IApplication</a><tt class="py-op">(</tt><tt class="py-base-class">object</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="IApplication-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="IApplication-expanded"><a name="L81"></a><tt class="py-lineno"> 81</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
+<a name="L82"></a><tt class="py-lineno"> 82</tt>  <tt class="py-line"><tt class="py-docstring">    Interface that provides all the application functions required for the L{Controller&lt;gui.controller.Controller&gt;}.</tt> </tt>
+<a name="L83"></a><tt class="py-lineno"> 83</tt>  <tt class="py-line"><tt class="py-docstring">    The meaning of every operation in the BiBler GUI is given by these functions.</tt> </tt>
+<a name="L84"></a><tt class="py-lineno"> 84</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
+<a name="L85"></a><tt class="py-lineno"> 85</tt>  <tt class="py-line">     </tt>
+<a name="IApplication.start"></a><div id="IApplication.start-def"><a name="L86"></a><tt class="py-lineno"> 86</tt> <a class="py-toggle" href="#" id="IApplication.start-toggle" onclick="return toggle('IApplication.start');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="gui.app_interface.IApplication-class.html#start">start</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="IApplication.start-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="IApplication.start-expanded"><a name="L87"></a><tt class="py-lineno"> 87</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L88"></a><tt class="py-lineno"> 88</tt>  <tt class="py-line"><tt class="py-docstring">        Start the application.</tt> </tt>
+<a name="L89"></a><tt class="py-lineno"> 89</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L90"></a><tt class="py-lineno"> 90</tt>  <tt class="py-line">        <tt class="py-keyword">raise</tt> <tt class="py-name">NotImplementedError</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L91"></a><tt class="py-lineno"> 91</tt>  <tt class="py-line">     </tt>
+<a name="IApplication.exit"></a><div id="IApplication.exit-def"><a name="L92"></a><tt class="py-lineno"> 92</tt> <a class="py-toggle" href="#" id="IApplication.exit-toggle" onclick="return toggle('IApplication.exit');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="gui.app_interface.IApplication-class.html#exit">exit</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="IApplication.exit-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="IApplication.exit-expanded"><a name="L93"></a><tt class="py-lineno"> 93</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L94"></a><tt class="py-lineno"> 94</tt>  <tt class="py-line"><tt class="py-docstring">        Close the application.</tt> </tt>
+<a name="L95"></a><tt class="py-lineno"> 95</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L96"></a><tt class="py-lineno"> 96</tt>  <tt class="py-line">        <tt class="py-keyword">raise</tt> <tt class="py-name">NotImplementedError</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L97"></a><tt class="py-lineno"> 97</tt>  <tt class="py-line">     </tt>
+<a name="IApplication.importFile"></a><div id="IApplication.importFile-def"><a name="L98"></a><tt class="py-lineno"> 98</tt> <a class="py-toggle" href="#" id="IApplication.importFile-toggle" onclick="return toggle('IApplication.importFile');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="gui.app_interface.IApplication-class.html#importFile">importFile</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">path</tt><tt class="py-op">,</tt> <tt class="py-param">importFormat</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="IApplication.importFile-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="IApplication.importFile-expanded"><a name="L99"></a><tt class="py-lineno"> 99</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L100"></a><tt class="py-lineno">100</tt>  <tt class="py-line"><tt class="py-docstring">        Import a list of entries from a file in a given format.</tt> </tt>
+<a name="L101"></a><tt class="py-lineno">101</tt>  <tt class="py-line"><tt class="py-docstring">        @type path: L{str}</tt> </tt>
+<a name="L102"></a><tt class="py-lineno">102</tt>  <tt class="py-line"><tt class="py-docstring">        @param path: The path to a file.</tt> </tt>
+<a name="L103"></a><tt class="py-lineno">103</tt>  <tt class="py-line"><tt class="py-docstring">        @type importFormat: L{utils.settings.ImportFormat}</tt> </tt>
+<a name="L104"></a><tt class="py-lineno">104</tt>  <tt class="py-line"><tt class="py-docstring">        @param importFormat: The format of the file.</tt> </tt>
+<a name="L105"></a><tt class="py-lineno">105</tt>  <tt class="py-line"><tt class="py-docstring">        @rtype: L{bool}</tt> </tt>
+<a name="L106"></a><tt class="py-lineno">106</tt>  <tt class="py-line"><tt class="py-docstring">        @return: C{True} if succeeded, C{False} otherwise.</tt> </tt>
+<a name="L107"></a><tt class="py-lineno">107</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L108"></a><tt class="py-lineno">108</tt>  <tt class="py-line">        <tt class="py-keyword">raise</tt> <tt class="py-name">NotImplementedError</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L109"></a><tt class="py-lineno">109</tt>  <tt class="py-line">     </tt>
+<a name="IApplication.exportFile"></a><div id="IApplication.exportFile-def"><a name="L110"></a><tt class="py-lineno">110</tt> <a class="py-toggle" href="#" id="IApplication.exportFile-toggle" onclick="return toggle('IApplication.exportFile');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="gui.app_interface.IApplication-class.html#exportFile">exportFile</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">path</tt><tt class="py-op">,</tt> <tt class="py-param">exportFormat</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="IApplication.exportFile-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="IApplication.exportFile-expanded"><a name="L111"></a><tt class="py-lineno">111</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L112"></a><tt class="py-lineno">112</tt>  <tt class="py-line"><tt class="py-docstring">        Export the list of entries to a file in a given format.</tt> </tt>
+<a name="L113"></a><tt class="py-lineno">113</tt>  <tt class="py-line"><tt class="py-docstring">        @type path: L{str}</tt> </tt>
+<a name="L114"></a><tt class="py-lineno">114</tt>  <tt class="py-line"><tt class="py-docstring">        @param path: The path to a file.</tt> </tt>
+<a name="L115"></a><tt class="py-lineno">115</tt>  <tt class="py-line"><tt class="py-docstring">        @type exportFormat: L{utils.settings.ExportFormat}</tt> </tt>
+<a name="L116"></a><tt class="py-lineno">116</tt>  <tt class="py-line"><tt class="py-docstring">        @param exportFormat: The format of the file.</tt> </tt>
+<a name="L117"></a><tt class="py-lineno">117</tt>  <tt class="py-line"><tt class="py-docstring">        @rtype: L{bool}</tt> </tt>
+<a name="L118"></a><tt class="py-lineno">118</tt>  <tt class="py-line"><tt class="py-docstring">        @return: C{True} if succeeded, C{False} otherwise.</tt> </tt>
+<a name="L119"></a><tt class="py-lineno">119</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L120"></a><tt class="py-lineno">120</tt>  <tt class="py-line">        <tt class="py-keyword">raise</tt> <tt class="py-name">NotImplementedError</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L121"></a><tt class="py-lineno">121</tt>  <tt class="py-line">     </tt>
+<a name="IApplication.addEntry"></a><div id="IApplication.addEntry-def"><a name="L122"></a><tt class="py-lineno">122</tt> <a class="py-toggle" href="#" id="IApplication.addEntry-toggle" onclick="return toggle('IApplication.addEntry');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="gui.app_interface.IApplication-class.html#addEntry">addEntry</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">entryBibTeX</tt><tt class="py-op">=</tt><tt class="py-name">None</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="IApplication.addEntry-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="IApplication.addEntry-expanded"><a name="L123"></a><tt class="py-lineno">123</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L124"></a><tt class="py-lineno">124</tt>  <tt class="py-line"><tt class="py-docstring">        Add a new entry. If C{entryBibTeX==None}, an empty entry is created.</tt> </tt>
+<a name="L125"></a><tt class="py-lineno">125</tt>  <tt class="py-line"><tt class="py-docstring">        @type entryBibTeX: L{str}</tt> </tt>
+<a name="L126"></a><tt class="py-lineno">126</tt>  <tt class="py-line"><tt class="py-docstring">        @param entryBibTeX: The BibTeX reference of the entry. </tt> </tt>
+<a name="L127"></a><tt class="py-lineno">127</tt>  <tt class="py-line"><tt class="py-docstring">        @rtype: L{int}</tt> </tt>
+<a name="L128"></a><tt class="py-lineno">128</tt>  <tt class="py-line"><tt class="py-docstring">        @return: The I{id} of the new entry. C{None} is returned if failed.</tt> </tt>
+<a name="L129"></a><tt class="py-lineno">129</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L130"></a><tt class="py-lineno">130</tt>  <tt class="py-line">        <tt class="py-keyword">raise</tt> <tt class="py-name">NotImplementedError</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L131"></a><tt class="py-lineno">131</tt>  <tt class="py-line">     </tt>
+<a name="IApplication.duplicateEntry"></a><div id="IApplication.duplicateEntry-def"><a name="L132"></a><tt class="py-lineno">132</tt> <a class="py-toggle" href="#" id="IApplication.duplicateEntry-toggle" onclick="return toggle('IApplication.duplicateEntry');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="gui.app_interface.IApplication-class.html#duplicateEntry">duplicateEntry</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">entryId</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="IApplication.duplicateEntry-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="IApplication.duplicateEntry-expanded"><a name="L133"></a><tt class="py-lineno">133</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L134"></a><tt class="py-lineno">134</tt>  <tt class="py-line"><tt class="py-docstring">        Create a copy of an existing entry.</tt> </tt>
+<a name="L135"></a><tt class="py-lineno">135</tt>  <tt class="py-line"><tt class="py-docstring">        @type entryId: L{int}</tt> </tt>
+<a name="L136"></a><tt class="py-lineno">136</tt>  <tt class="py-line"><tt class="py-docstring">        @param entryId: The I{id} of the entry to copy.</tt> </tt>
+<a name="L137"></a><tt class="py-lineno">137</tt>  <tt class="py-line"><tt class="py-docstring">        @rtype: L{int}</tt> </tt>
+<a name="L138"></a><tt class="py-lineno">138</tt>  <tt class="py-line"><tt class="py-docstring">        @return: The I{id} of the new entry. C{None} is returned if failed.</tt> </tt>
+<a name="L139"></a><tt class="py-lineno">139</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L140"></a><tt class="py-lineno">140</tt>  <tt class="py-line">        <tt class="py-keyword">raise</tt> <tt class="py-name">NotImplementedError</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L141"></a><tt class="py-lineno">141</tt>  <tt class="py-line">     </tt>
+<a name="IApplication.updateEntry"></a><div id="IApplication.updateEntry-def"><a name="L142"></a><tt class="py-lineno">142</tt> <a class="py-toggle" href="#" id="IApplication.updateEntry-toggle" onclick="return toggle('IApplication.updateEntry');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="gui.app_interface.IApplication-class.html#updateEntry">updateEntry</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">entryId</tt><tt class="py-op">,</tt> <tt class="py-param">entryBibTeX</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="IApplication.updateEntry-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="IApplication.updateEntry-expanded"><a name="L143"></a><tt class="py-lineno">143</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L144"></a><tt class="py-lineno">144</tt>  <tt class="py-line"><tt class="py-docstring">        Update an entry with a new BibTeX reference.</tt> </tt>
+<a name="L145"></a><tt class="py-lineno">145</tt>  <tt class="py-line"><tt class="py-docstring">        @type entryId: L{int}</tt> </tt>
+<a name="L146"></a><tt class="py-lineno">146</tt>  <tt class="py-line"><tt class="py-docstring">        @param entryId: The I{id} of the entry to update. </tt> </tt>
+<a name="L147"></a><tt class="py-lineno">147</tt>  <tt class="py-line"><tt class="py-docstring">        @type entryBibTeX: L{str}</tt> </tt>
+<a name="L148"></a><tt class="py-lineno">148</tt>  <tt class="py-line"><tt class="py-docstring">        @param entryBibTeX: The BibTeX reference. </tt> </tt>
+<a name="L149"></a><tt class="py-lineno">149</tt>  <tt class="py-line"><tt class="py-docstring">        @rtype: L{bool}</tt> </tt>
+<a name="L150"></a><tt class="py-lineno">150</tt>  <tt class="py-line"><tt class="py-docstring">        @return: C{True} if succeeded, C{False} otherwise.</tt> </tt>
+<a name="L151"></a><tt class="py-lineno">151</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L152"></a><tt class="py-lineno">152</tt>  <tt class="py-line">        <tt class="py-keyword">raise</tt> <tt class="py-name">NotImplementedError</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L153"></a><tt class="py-lineno">153</tt>  <tt class="py-line">     </tt>
+<a name="IApplication.deleteEntry"></a><div id="IApplication.deleteEntry-def"><a name="L154"></a><tt class="py-lineno">154</tt> <a class="py-toggle" href="#" id="IApplication.deleteEntry-toggle" onclick="return toggle('IApplication.deleteEntry');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="gui.app_interface.IApplication-class.html#deleteEntry">deleteEntry</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">entryId</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="IApplication.deleteEntry-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="IApplication.deleteEntry-expanded"><a name="L155"></a><tt class="py-lineno">155</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L156"></a><tt class="py-lineno">156</tt>  <tt class="py-line"><tt class="py-docstring">        Delete an entry.</tt> </tt>
+<a name="L157"></a><tt class="py-lineno">157</tt>  <tt class="py-line"><tt class="py-docstring">        @type entryId: L{int}</tt> </tt>
+<a name="L158"></a><tt class="py-lineno">158</tt>  <tt class="py-line"><tt class="py-docstring">        @param entryId: The I{id} of the entry to delete. </tt> </tt>
+<a name="L159"></a><tt class="py-lineno">159</tt>  <tt class="py-line"><tt class="py-docstring">        @rtype: L{bool}</tt> </tt>
+<a name="L160"></a><tt class="py-lineno">160</tt>  <tt class="py-line"><tt class="py-docstring">        @return: C{True} if succeeded, C{False} otherwise.</tt> </tt>
+<a name="L161"></a><tt class="py-lineno">161</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+</div><a name="L162"></a><tt class="py-lineno">162</tt>  <tt class="py-line">     </tt>
+<a name="IApplication.previewEntry"></a><div id="IApplication.previewEntry-def"><a name="L163"></a><tt class="py-lineno">163</tt> <a class="py-toggle" href="#" id="IApplication.previewEntry-toggle" onclick="return toggle('IApplication.previewEntry');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="gui.app_interface.IApplication-class.html#previewEntry">previewEntry</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">entryId</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="IApplication.previewEntry-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="IApplication.previewEntry-expanded"><a name="L164"></a><tt class="py-lineno">164</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L165"></a><tt class="py-lineno">165</tt>  <tt class="py-line"><tt class="py-docstring">        Convert an entry into its HTML representation following the bibliography style specified in L{utils.settings.Preferences}.</tt> </tt>
+<a name="L166"></a><tt class="py-lineno">166</tt>  <tt class="py-line"><tt class="py-docstring">        @type entryId: L{int}</tt> </tt>
+<a name="L167"></a><tt class="py-lineno">167</tt>  <tt class="py-line"><tt class="py-docstring">        @param entryId: The I{id} of the entry to preview. </tt> </tt>
+<a name="L168"></a><tt class="py-lineno">168</tt>  <tt class="py-line"><tt class="py-docstring">        @rtype: L{str}</tt> </tt>
+<a name="L169"></a><tt class="py-lineno">169</tt>  <tt class="py-line"><tt class="py-docstring">        @return: The HTML representation of the entry.</tt> </tt>
+<a name="L170"></a><tt class="py-lineno">170</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L171"></a><tt class="py-lineno">171</tt>  <tt class="py-line">        <tt class="py-keyword">raise</tt> <tt class="py-name">NotImplementedError</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L172"></a><tt class="py-lineno">172</tt>  <tt class="py-line">     </tt>
+<a name="IApplication.undo"></a><div id="IApplication.undo-def"><a name="L173"></a><tt class="py-lineno">173</tt> <a class="py-toggle" href="#" id="IApplication.undo-toggle" onclick="return toggle('IApplication.undo');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="gui.app_interface.IApplication-class.html#undo">undo</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="IApplication.undo-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="IApplication.undo-expanded"><a name="L174"></a><tt class="py-lineno">174</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L175"></a><tt class="py-lineno">175</tt>  <tt class="py-line"><tt class="py-docstring">        Undo the last action performed. </tt> </tt>
+<a name="L176"></a><tt class="py-lineno">176</tt>  <tt class="py-line"><tt class="py-docstring">        @rtype: L{bool}</tt> </tt>
+<a name="L177"></a><tt class="py-lineno">177</tt>  <tt class="py-line"><tt class="py-docstring">        @return: C{True} if succeeded, C{False} otherwise.</tt> </tt>
+<a name="L178"></a><tt class="py-lineno">178</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L179"></a><tt class="py-lineno">179</tt>  <tt class="py-line">        <tt class="py-keyword">raise</tt> <tt class="py-name">NotImplementedError</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L180"></a><tt class="py-lineno">180</tt>  <tt class="py-line">     </tt>
+<a name="IApplication.hasUndoableActionLeft"></a><div id="IApplication.hasUndoableActionLeft-def"><a name="L181"></a><tt class="py-lineno">181</tt> <a class="py-toggle" href="#" id="IApplication.hasUndoableActionLeft-toggle" onclick="return toggle('IApplication.hasUndoableActionLeft');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="gui.app_interface.IApplication-class.html#hasUndoableActionLeft">hasUndoableActionLeft</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="IApplication.hasUndoableActionLeft-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="IApplication.hasUndoableActionLeft-expanded"><a name="L182"></a><tt class="py-lineno">182</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L183"></a><tt class="py-lineno">183</tt>  <tt class="py-line"><tt class="py-docstring">        Verify if there is any action to undo.</tt> </tt>
+<a name="L184"></a><tt class="py-lineno">184</tt>  <tt class="py-line"><tt class="py-docstring">        @rtype: L{bool}</tt> </tt>
+<a name="L185"></a><tt class="py-lineno">185</tt>  <tt class="py-line"><tt class="py-docstring">        @return: C{True} if succeeded, C{False} otherwise.</tt> </tt>
+<a name="L186"></a><tt class="py-lineno">186</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L187"></a><tt class="py-lineno">187</tt>  <tt class="py-line">        <tt class="py-keyword">raise</tt> <tt class="py-name">NotImplementedError</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L188"></a><tt class="py-lineno">188</tt>  <tt class="py-line">     </tt>
+<a name="IApplication.getEntryPaperURL"></a><div id="IApplication.getEntryPaperURL-def"><a name="L189"></a><tt class="py-lineno">189</tt> <a class="py-toggle" href="#" id="IApplication.getEntryPaperURL-toggle" onclick="return toggle('IApplication.getEntryPaperURL');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="gui.app_interface.IApplication-class.html#getEntryPaperURL">getEntryPaperURL</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">entryId</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="IApplication.getEntryPaperURL-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="IApplication.getEntryPaperURL-expanded"><a name="L190"></a><tt class="py-lineno">190</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L191"></a><tt class="py-lineno">191</tt>  <tt class="py-line"><tt class="py-docstring">        Get the URL of the paper of the selected entry.</tt> </tt>
+<a name="L192"></a><tt class="py-lineno">192</tt>  <tt class="py-line"><tt class="py-docstring">        @type entryId: L{int}</tt> </tt>
+<a name="L193"></a><tt class="py-lineno">193</tt>  <tt class="py-line"><tt class="py-docstring">        @param entryId: The I{id} of the entry. </tt> </tt>
+<a name="L194"></a><tt class="py-lineno">194</tt>  <tt class="py-line"><tt class="py-docstring">        @rtype: L{str}</tt> </tt>
+<a name="L195"></a><tt class="py-lineno">195</tt>  <tt class="py-line"><tt class="py-docstring">        @return: The URL (or path) to the file.</tt> </tt>
+<a name="L196"></a><tt class="py-lineno">196</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L197"></a><tt class="py-lineno">197</tt>  <tt class="py-line">        <tt class="py-keyword">raise</tt> <tt class="py-name">NotImplementedError</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L198"></a><tt class="py-lineno">198</tt>  <tt class="py-line">     </tt>
+<a name="IApplication.search"></a><div id="IApplication.search-def"><a name="L199"></a><tt class="py-lineno">199</tt> <a class="py-toggle" href="#" id="IApplication.search-toggle" onclick="return toggle('IApplication.search');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="gui.app_interface.IApplication-class.html#search">search</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">query</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="IApplication.search-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="IApplication.search-expanded"><a name="L200"></a><tt class="py-lineno">200</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L201"></a><tt class="py-lineno">201</tt>  <tt class="py-line"><tt class="py-docstring">        Search for entries that satisfy the query provided.</tt> </tt>
+<a name="L202"></a><tt class="py-lineno">202</tt>  <tt class="py-line"><tt class="py-docstring">        @type query: L{str}</tt> </tt>
+<a name="L203"></a><tt class="py-lineno">203</tt>  <tt class="py-line"><tt class="py-docstring">        @param query: The query to match.</tt> </tt>
+<a name="L204"></a><tt class="py-lineno">204</tt>  <tt class="py-line"><tt class="py-docstring">        @rtype: L{bool}</tt> </tt>
+<a name="L205"></a><tt class="py-lineno">205</tt>  <tt class="py-line"><tt class="py-docstring">        @return: C{True} if succeeded, C{False} otherwise.</tt> </tt>
+<a name="L206"></a><tt class="py-lineno">206</tt>  <tt class="py-line"><tt class="py-docstring">        @note: C{True} is returned even if no results were found.</tt> </tt>
+<a name="L207"></a><tt class="py-lineno">207</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L208"></a><tt class="py-lineno">208</tt>  <tt class="py-line">        <tt class="py-keyword">raise</tt> <tt class="py-name">NotImplementedError</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L209"></a><tt class="py-lineno">209</tt>  <tt class="py-line">     </tt>
+<a name="IApplication.sort"></a><div id="IApplication.sort-def"><a name="L210"></a><tt class="py-lineno">210</tt> <a class="py-toggle" href="#" id="IApplication.sort-toggle" onclick="return toggle('IApplication.sort');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="gui.app_interface.IApplication-class.html#sort">sort</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">field</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="IApplication.sort-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="IApplication.sort-expanded"><a name="L211"></a><tt class="py-lineno">211</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L212"></a><tt class="py-lineno">212</tt>  <tt class="py-line"><tt class="py-docstring">        Inplace sort of in alphabetically increasing order all entries with respect to a field.</tt> </tt>
+<a name="L213"></a><tt class="py-lineno">213</tt>  <tt class="py-line"><tt class="py-docstring">        @type field: L{EntryListColumn}</tt> </tt>
+<a name="L214"></a><tt class="py-lineno">214</tt>  <tt class="py-line"><tt class="py-docstring">        @param field: The field to sort on.</tt> </tt>
+<a name="L215"></a><tt class="py-lineno">215</tt>  <tt class="py-line"><tt class="py-docstring">        @rtype: L{bool}</tt> </tt>
+<a name="L216"></a><tt class="py-lineno">216</tt>  <tt class="py-line"><tt class="py-docstring">        @return: C{True} if succeeded, C{False} otherwise.</tt> </tt>
+<a name="L217"></a><tt class="py-lineno">217</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L218"></a><tt class="py-lineno">218</tt>  <tt class="py-line">        <tt class="py-keyword">raise</tt> <tt class="py-name">NotImplementedError</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L219"></a><tt class="py-lineno">219</tt>  <tt class="py-line"> </tt>
+<a name="IApplication.getEntry"></a><div id="IApplication.getEntry-def"><a name="L220"></a><tt class="py-lineno">220</tt> <a class="py-toggle" href="#" id="IApplication.getEntry-toggle" onclick="return toggle('IApplication.getEntry');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="gui.app_interface.IApplication-class.html#getEntry">getEntry</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">entryId</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="IApplication.getEntry-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="IApplication.getEntry-expanded"><a name="L221"></a><tt class="py-lineno">221</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L222"></a><tt class="py-lineno">222</tt>  <tt class="py-line"><tt class="py-docstring">        Convert an entry into an L{EntryDict}.</tt> </tt>
+<a name="L223"></a><tt class="py-lineno">223</tt>  <tt class="py-line"><tt class="py-docstring">        @type entryId: L{int}</tt> </tt>
+<a name="L224"></a><tt class="py-lineno">224</tt>  <tt class="py-line"><tt class="py-docstring">        @param entryId: The I{id} of the entry. </tt> </tt>
+<a name="L225"></a><tt class="py-lineno">225</tt>  <tt class="py-line"><tt class="py-docstring">        @rtype: L{EntryDict}</tt> </tt>
+<a name="L226"></a><tt class="py-lineno">226</tt>  <tt class="py-line"><tt class="py-docstring">        @return: The entry.</tt> </tt>
+<a name="L227"></a><tt class="py-lineno">227</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L228"></a><tt class="py-lineno">228</tt>  <tt class="py-line">        <tt class="py-keyword">raise</tt> <tt class="py-name">NotImplementedError</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L229"></a><tt class="py-lineno">229</tt>  <tt class="py-line"> </tt>
+<a name="IApplication.getBibTeX"></a><div id="IApplication.getBibTeX-def"><a name="L230"></a><tt class="py-lineno">230</tt> <a class="py-toggle" href="#" id="IApplication.getBibTeX-toggle" onclick="return toggle('IApplication.getBibTeX');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="gui.app_interface.IApplication-class.html#getBibTeX">getBibTeX</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">entryId</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="IApplication.getBibTeX-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="IApplication.getBibTeX-expanded"><a name="L231"></a><tt class="py-lineno">231</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L232"></a><tt class="py-lineno">232</tt>  <tt class="py-line"><tt class="py-docstring">        Convert an entry into its BibTeX reference.</tt> </tt>
+<a name="L233"></a><tt class="py-lineno">233</tt>  <tt class="py-line"><tt class="py-docstring">        @type entryId: L{int}</tt> </tt>
+<a name="L234"></a><tt class="py-lineno">234</tt>  <tt class="py-line"><tt class="py-docstring">        @param entryId: The I{id} of the entry. </tt> </tt>
+<a name="L235"></a><tt class="py-lineno">235</tt>  <tt class="py-line"><tt class="py-docstring">        @rtype: L{str}</tt> </tt>
+<a name="L236"></a><tt class="py-lineno">236</tt>  <tt class="py-line"><tt class="py-docstring">        @return: The BibTeX reference.</tt> </tt>
+<a name="L237"></a><tt class="py-lineno">237</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L238"></a><tt class="py-lineno">238</tt>  <tt class="py-line">        <tt class="py-keyword">raise</tt> <tt class="py-name">NotImplementedError</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L239"></a><tt class="py-lineno">239</tt>  <tt class="py-line">     </tt>
+<a name="IApplication.getAllEntries"></a><div id="IApplication.getAllEntries-def"><a name="L240"></a><tt class="py-lineno">240</tt> <a class="py-toggle" href="#" id="IApplication.getAllEntries-toggle" onclick="return toggle('IApplication.getAllEntries');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="gui.app_interface.IApplication-class.html#getAllEntries">getAllEntries</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="IApplication.getAllEntries-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="IApplication.getAllEntries-expanded"><a name="L241"></a><tt class="py-lineno">241</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L242"></a><tt class="py-lineno">242</tt>  <tt class="py-line"><tt class="py-docstring">        Get the list of all entries converted into L{EntryDict}.</tt> </tt>
+<a name="L243"></a><tt class="py-lineno">243</tt>  <tt class="py-line"><tt class="py-docstring">        @rtype: L{list}</tt> </tt>
+<a name="L244"></a><tt class="py-lineno">244</tt>  <tt class="py-line"><tt class="py-docstring">        @return: The list of entries.</tt> </tt>
+<a name="L245"></a><tt class="py-lineno">245</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L246"></a><tt class="py-lineno">246</tt>  <tt class="py-line">        <tt class="py-keyword">raise</tt> <tt class="py-name">NotImplementedError</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L247"></a><tt class="py-lineno">247</tt>  <tt class="py-line">     </tt>
+<a name="IApplication.getEntryCount"></a><div id="IApplication.getEntryCount-def"><a name="L248"></a><tt class="py-lineno">248</tt> <a class="py-toggle" href="#" id="IApplication.getEntryCount-toggle" onclick="return toggle('IApplication.getEntryCount');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="gui.app_interface.IApplication-class.html#getEntryCount">getEntryCount</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="IApplication.getEntryCount-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="IApplication.getEntryCount-expanded"><a name="L249"></a><tt class="py-lineno">249</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L250"></a><tt class="py-lineno">250</tt>  <tt class="py-line"><tt class="py-docstring">        Get the total number of entries.</tt> </tt>
+<a name="L251"></a><tt class="py-lineno">251</tt>  <tt class="py-line"><tt class="py-docstring">        @rtype: L{int}</tt> </tt>
+<a name="L252"></a><tt class="py-lineno">252</tt>  <tt class="py-line"><tt class="py-docstring">        @return: The total.</tt> </tt>
+<a name="L253"></a><tt class="py-lineno">253</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L254"></a><tt class="py-lineno">254</tt>  <tt class="py-line">        <tt class="py-keyword">raise</tt> <tt class="py-name">NotImplementedError</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L255"></a><tt class="py-lineno">255</tt>  <tt class="py-line">     </tt>
+<a name="IApplication.getSearchResult"></a><div id="IApplication.getSearchResult-def"><a name="L256"></a><tt class="py-lineno">256</tt> <a class="py-toggle" href="#" id="IApplication.getSearchResult-toggle" onclick="return toggle('IApplication.getSearchResult');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="gui.app_interface.IApplication-class.html#getSearchResult">getSearchResult</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="IApplication.getSearchResult-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="IApplication.getSearchResult-expanded"><a name="L257"></a><tt class="py-lineno">257</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L258"></a><tt class="py-lineno">258</tt>  <tt class="py-line"><tt class="py-docstring">        Get the list of entries filtered by the search.</tt> </tt>
+<a name="L259"></a><tt class="py-lineno">259</tt>  <tt class="py-line"><tt class="py-docstring">        @rtype: L{EntryDict}</tt> </tt>
+<a name="L260"></a><tt class="py-lineno">260</tt>  <tt class="py-line"><tt class="py-docstring">        @return: The list of entries.</tt> </tt>
+<a name="L261"></a><tt class="py-lineno">261</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L262"></a><tt class="py-lineno">262</tt>  <tt class="py-line">        <tt class="py-keyword">raise</tt> <tt class="py-name">NotImplementedError</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L263"></a><tt class="py-lineno">263</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Wed Jan 22 13:16:36 2014
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+(dp0
+S'show_imports'
+p1
+I1
+sS'prj_name'
+p2
+S'BiBler'
+p3
+sS'docformat'
+p4
+S'epytext'
+p5
+sS'inheritance'
+p6
+S'grouped'
+p7
+sS'help'
+p8
+NsS'modules'
+p9
+(VD:/Documents/My Documents/Alabama/Development/workplaces/WBiBler/BiBler/BiBler.py
+p10
+VD:/Documents/My Documents/Alabama/Development/workplaces/WBiBler/BiBler/app/__init__.py
+p11
+VD:/Documents/My Documents/Alabama/Development/workplaces/WBiBler/BiBler/app/statechart.py
+p12
+VD:/Documents/My Documents/Alabama/Development/workplaces/WBiBler/BiBler/gui/__init__.py
+p13
+VD:/Documents/My Documents/Alabama/Development/workplaces/WBiBler/BiBler/gui/app_interface.py
+p14
+VD:/Documents/My Documents/Alabama/Development/workplaces/WBiBler/BiBler/gui/controller.py
+p15
+VD:/Documents/My Documents/Alabama/Development/workplaces/WBiBler/BiBler/gui/gui.py
+p16
+VD:/Documents/My Documents/Alabama/Development/workplaces/WBiBler/BiBler/utils/__init__.py
+p17
+VD:/Documents/My Documents/Alabama/Development/workplaces/WBiBler/BiBler/utils/resourcemgr.py
+p18
+VD:/Documents/My Documents/Alabama/Development/workplaces/WBiBler/BiBler/utils/settings.py
+p19
+VD:/Documents/My Documents/Alabama/Development/workplaces/WBiBler/BiBler/utils/utils.py
+p20
+tp21
+sS'private'
+p22
+I1
+sS'prj_url'
+p23
+NsS'introspect_or_parse'
+p24
+S'both'
+p25
+sS'frames'
+p26
+I1
+sS'css'
+p27
+S'default'
+p28
+sS'target'
+p29
+S'D:\\Documents\\My Documents\\Alabama\\Development\\workplaces\\WBiBler\\epydoc'
+p30
+s.

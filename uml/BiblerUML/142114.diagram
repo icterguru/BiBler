@@ -1,0 +1,56 @@
+format 76
+
+classinstancecanvas 128034 classinstance_ref 142114 // 
+  xyz 71 9 2000 life_line_z 2000
+end
+classinstancecanvas 128162 classinstance_ref 134690 // refManager
+  xyz 172 9 2000 life_line_z 2000
+end
+classinstancecanvas 128290 classinstance_ref 142242 // importExport
+  xyz 372 8 2005 life_line_z 2000
+end
+durationcanvas 128418 classinstance_ref 128034 // :UserInterface
+  xyzwh 106 92 2010 11 97
+end
+durationcanvas 129058 classinstance_ref 128162 // refManager:ReferenceManager
+  xyzwh 248 115 2010 11 27
+end
+durationcanvas 129314 classinstance_ref 128290 // importExport:ImportExportManager
+  xyzwh 455 121 2010 11 44
+  overlappingdurationcanvas 129570
+    xyzwh 461 134 2020 11 25
+  end
+end
+lostfoundmsgsupport 128546 xyz 6 94 2015
+msg 128674 found_asynchronous
+  from lostfoundmsgsupport_ref 128546
+  to durationcanvas_ref 128418
+  yz 92 2015 msg operation_ref 143497 // "importFile(in self : , in path : string, in importFormat : ImportFormat) : bool"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  args "path, exportFormat"
+  label_xy 6 77
+msg 129186 synchronous
+  from durationcanvas_ref 128418
+  to durationcanvas_ref 129058
+  yz 117 2015 explicitmsg "refManager.importExport.importFile()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 121 102
+msg 129442 synchronous
+  from durationcanvas_ref 129058
+  to durationcanvas_ref 129314
+  yz 122 2015 msg operation_ref 153890 // "importFile(in self : , in path : string, in format : ImportFormat) : bool"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  args "path, format"
+  label_xy 296 112
+reflexivemsg 129698 asynchronous
+  to durationcanvas_ref 129570
+  yz 135 2025 msg operation_ref 154274 // "fromBib(in self : ) : bool"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 476 121
+msg 130082 return
+  from durationcanvas_ref 129314
+  to durationcanvas_ref 128418
+  yz 162 2025 explicitmsg "bool"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 276 148
+end

@@ -1,0 +1,4381 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>gui.controller.Controller</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="gui-module.html">Package&nbsp;gui</a> ::
+        <a href="gui.controller-module.html">Module&nbsp;controller</a> ::
+        Class&nbsp;Controller
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="gui.controller.Controller-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class Controller</h1><p class="nomargin-top"><span class="codelink"><a href="gui.controller-pysrc.html#Controller">source&nbsp;code</a></span></p>
+<center>
+<center>  <map id="class_hierarchy_for_controller" name="class_hierarchy_for_controller">
+<area shape="rect" id="node1" href="gui.controller.Controller-class.html" title="Controller" alt="" coords="5,6,91,31"/>
+</map>
+  <img src="class_hierarchy_for_controller.gif" alt='' usemap="#class_hierarchy_for_controller" ismap="ismap" class="graph-without-title" />
+</center>
+</center>
+<hr />
+<p>The statechart controller that defines the behavior of the GUI. It 
+  manages the communication between the statechart and the GUI. It also 
+  exposes an API for sending events to the statechart and an API of the 
+  functions the statechart can invoke, which is delegated to either the GUI
+  or the application.</p>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      x.__init__(...) initializes x; see help(type(x)) for signature</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.__init__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#bindApp" class="summary-sig-name">bindApp</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">application</span>)</span><br />
+      Attach an application to the controller.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.bindApp">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#bindGUI" class="summary-sig-name">bindGUI</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">gui</span>)</span><br />
+      Attach a GUI to the controller.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.bindGUI">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#bindSC" class="summary-sig-name">bindSC</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">statechart</span>)</span><br />
+      Attach a statechart to the controller.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.bindSC">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#exit" class="summary-sig-name">exit</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      End the GUI and the application.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.exit">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#start" class="summary-sig-name">start</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Start the GUI, the application, and the statechart.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.start">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__format__</code>,
+      <code>__str__</code>,
+      <code>__getattribute__</code>,
+      <code>__subclasshook__</code>,
+      <code>__hash__</code>,
+      <code>__sizeof__</code>,
+      <code>__setattr__</code>,
+      <code>__reduce_ex__</code>,
+      <code>__new__</code>,
+      <code>__reduce__</code>,
+      <code>__delattr__</code>,
+      <code>__repr__</code>
+      </p>
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Statechart events</th></tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#aboutClicked" class="summary-sig-name">aboutClicked</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Triggered when the GUI issues the about command.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.aboutClicked">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#addClicked" class="summary-sig-name">addClicked</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Triggered when the GUI issues the add command.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.addClicked">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#colTitleClicked" class="summary-sig-name">colTitleClicked</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Triggered when the Title column header is clicked.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.colTitleClicked">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#colYearClicked" class="summary-sig-name">colYearClicked</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Triggered when the Year column header is clicked.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.colYearClicked">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#colKeyClicked" class="summary-sig-name">colKeyClicked</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Triggered when the Key column header is clicked.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.colKeyClicked">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#colPaperClicked" class="summary-sig-name">colPaperClicked</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Triggered when the Paper column header is clicked.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.colPaperClicked">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#colIdClicked" class="summary-sig-name">colIdClicked</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Triggered when the Id column header is clicked.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.colIdClicked">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#colAuthorClicked" class="summary-sig-name">colAuthorClicked</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Triggered when the Author column header is clicked.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.colAuthorClicked">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#cancelClicked" class="summary-sig-name">cancelClicked</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Triggered when a cancel button is clicked.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.cancelClicked">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#colTypeClicked" class="summary-sig-name">colTypeClicked</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Triggered when the Type column header is clicked.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.colTypeClicked">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#clearFilterClicked" class="summary-sig-name">clearFilterClicked</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Triggered when the GUI issues the clear filter command.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.clearFilterClicked">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#deleteClicked" class="summary-sig-name">deleteClicked</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Triggered when the GUI issues the delete command.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.deleteClicked">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#duplicateClicked" class="summary-sig-name">duplicateClicked</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Triggered when the GUI issues the duplicate command.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.duplicateClicked">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#entryDoubleClicked" class="summary-sig-name">entryDoubleClicked</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">entryId</span>)</span><br />
+      Triggered when an entry is double-clicked in the entry list.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.entryDoubleClicked">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#exportFileSelected" class="summary-sig-name">exportFileSelected</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">path</span>,
+        <span class="summary-sig-arg">exportFormat</span>)</span><br />
+      Triggered when a file to export to is selected.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.exportFileSelected">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#entrySelected" class="summary-sig-name">entrySelected</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">entryId</span>)</span><br />
+      Triggered when an entry is selected in the entry list.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.entrySelected">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#entryDeselected" class="summary-sig-name">entryDeselected</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Triggered when no entry is selected in the entry list.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.entryDeselected">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#exitClicked" class="summary-sig-name">exitClicked</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Triggered when the GUI window was requested to be closed.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.exitClicked">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#exportClicked" class="summary-sig-name">exportClicked</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Triggered when the GUI issues the export command.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.exportClicked">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#filterClicked" class="summary-sig-name">filterClicked</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">query</span>)</span><br />
+      Triggered when the GUI issued the filter command.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.filterClicked">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#forceExitClicked" class="summary-sig-name">forceExitClicked</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Triggered when the GUI ignores to save pending changes and exit was 
+      requested.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.forceExitClicked">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#importFileSelected" class="summary-sig-name">importFileSelected</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">path</span>,
+        <span class="summary-sig-arg">importFormat</span>)</span><br />
+      Triggered when the GUI a file to import is selected.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.importFileSelected">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#importClicked" class="summary-sig-name">importClicked</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Triggered when the GUI issues the import command.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.importClicked">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#manualClicked" class="summary-sig-name">manualClicked</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Triggered when the GUI issues the user manual command.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.manualClicked">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#openClicked" class="summary-sig-name">openClicked</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Triggered when the GUI issues the open command.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.openClicked">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#openFileSelected" class="summary-sig-name">openFileSelected</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">path</span>,
+        <span class="summary-sig-arg">importFormat</span>)</span><br />
+      Triggered when a file to open is selected.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.openFileSelected">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#preferencesChanged" class="summary-sig-name">preferencesChanged</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Triggered when the preferences of the GUI have changed.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.preferencesChanged">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#preferencesClicked" class="summary-sig-name">preferencesClicked</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Triggered when the GUI issues the preferences command.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.preferencesClicked">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#saveFileSelected" class="summary-sig-name">saveFileSelected</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">path</span>,
+        <span class="summary-sig-arg">exportFormat</span>)</span><br />
+      Triggered when a file to save to is selected.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.saveFileSelected">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#saveClicked" class="summary-sig-name">saveClicked</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">exportFormat</span>)</span><br />
+      Triggered when the GUI issues the save command.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.saveClicked">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#searchClicked" class="summary-sig-name">searchClicked</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Triggered when the GUI issues the search command.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.searchClicked">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#saveAsClicked" class="summary-sig-name">saveAsClicked</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Triggered when the GUI issues the save as command.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.saveAsClicked">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#textChangedInEditor" class="summary-sig-name">textChangedInEditor</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">text</span>)</span><br />
+      Triggered when the text in the editor has changed.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.textChangedInEditor">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#undoClicked" class="summary-sig-name">undoClicked</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Triggered when the GUI issues the undo command.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.undoClicked">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#updatedButtonClicked" class="summary-sig-name">updatedButtonClicked</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">entryBibTeX</span>)</span><br />
+      Triggered when a reference must be updated.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.updatedButtonClicked">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;API to interface with Statechart</th></tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#__sendEvent" class="summary-sig-name" onclick="show_private();">__sendEvent</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">e</span>)</span><br />
+      Send event <code>e</code> to the statechart.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.__sendEvent">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#__sendError" class="summary-sig-name" onclick="show_private();">__sendError</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">ex</span>)</span><br />
+      Triggered if an exception occurred.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.__sendError">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code class="link">bool</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#__sendAppOperationResult" class="summary-sig-name" onclick="show_private();">__sendAppOperationResult</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">condition</span>=<span class="summary-sig-default">&lt;function &lt;lambda&gt; at 0x034F45F0&gt;</span>,
+        <span class="summary-sig-arg">ex</span>=<span class="summary-sig-default">Exception('An error has occurred.',)</span>)</span><br />
+      Send a <code>success</code> event to the statechart if an operation 
+      it called was successful.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.__sendAppOperationResult">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code class="link">bool</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#isBibtexFileLoaded" class="summary-sig-name">isBibtexFileLoaded</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Verify if a BibTeX file is currently open.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.isBibtexFileLoaded">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;API to interface with Application</th></tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#addEntry" class="summary-sig-name">addEntry</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Add an entry from its BibTeX format.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.addEntry">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code class="link">bool</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#currentEntryHasPaper" class="summary-sig-name">currentEntryHasPaper</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Verify the selected entry has a paper.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.currentEntryHasPaper">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#deleteEntry" class="summary-sig-name">deleteEntry</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Delete the selected entry.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.deleteEntry">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#duplicateEntry" class="summary-sig-name">duplicateEntry</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Duplicate the selected entry.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.duplicateEntry">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#exportFile" class="summary-sig-name">exportFile</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Export a file to a selected path in a given format.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.exportFile">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#getBibTeX" class="summary-sig-name">getBibTeX</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Convert the selected entry to its BibTeX format.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.getBibTeX">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code class="link">int</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#getEntryCount" class="summary-sig-name">getEntryCount</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Get the total number of entries currently displayed.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.getEntryCount">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#getAllEntries" class="summary-sig-name">getAllEntries</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Load all entries in <a href="gui.app_interface.EntryDict-class.html" 
+      class="link">EntryDict</a> format.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.getAllEntries">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#getEntryPaperURL" class="summary-sig-name">getEntryPaperURL</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Get the URL of the paper of the selected entry.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.getEntryPaperURL">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code class="link">bool</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#hasUndoableActionLeft" class="summary-sig-name">hasUndoableActionLeft</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Verify if there is any action to undo.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.hasUndoableActionLeft">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#importFile" class="summary-sig-name">importFile</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Import a file from a selected path in a given format.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.importFile">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#openFile" class="summary-sig-name">openFile</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Import a BibTeX file from a selected path.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.openFile">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#previewEntry" class="summary-sig-name">previewEntry</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Preview the selected entry in the preferred style.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.previewEntry">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#saveFile" class="summary-sig-name">saveFile</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Export a BibTeX file to a selected path.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.saveFile">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#sort" class="summary-sig-name">sort</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Sort all entries with respect to the field corresponding to the 
+      selected column.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.sort">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#search" class="summary-sig-name">search</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Search for entries that satisfy the query provided.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.search">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#updateEntry" class="summary-sig-name">updateEntry</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Update the selected entry from its BibTeX format.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.updateEntry">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#undo" class="summary-sig-name">undo</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Undo the last action performed.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.undo">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;API to interface with GUI</th></tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#addNewEntryRow" class="summary-sig-name">addNewEntryRow</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Add a new row for the newly created entry.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.addNewEntryRow">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#clearStatusBar" class="summary-sig-name">clearStatusBar</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Clear any message in the status bar.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.clearStatusBar">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#clearPreviewer" class="summary-sig-name">clearPreviewer</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Remove all content from the previewer.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.clearPreviewer">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#clearList" class="summary-sig-name">clearList</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Delete all rows.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.clearList">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#clearEditor" class="summary-sig-name">clearEditor</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Remove all the text from the editor.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.clearEditor">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#disableUpdateButton" class="summary-sig-name">disableUpdateButton</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Disable the <i>Update</i> button.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.disableUpdateButton">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#disableUndo" class="summary-sig-name">disableUndo</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Disable the <i>Undo</i> menu.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.disableUndo">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#displayBibTexInEditor" class="summary-sig-name">displayBibTexInEditor</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Replace text in the BibTeX editor with the BibTeX format of the 
+      selected entry.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.displayBibTexInEditor">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#disableClearFilter" class="summary-sig-name">disableClearFilter</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Disable the <i>Clear Filer</i> menu.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.disableClearFilter">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#disableDuplicate" class="summary-sig-name">disableDuplicate</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Disable the <i>Duplicate</i> menu.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.disableDuplicate">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#displayEntries" class="summary-sig-name">displayEntries</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Display the currently loaded entries in the list of entries.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.displayEntries">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#disableDelete" class="summary-sig-name">disableDelete</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Disable the <i>Delete</i> menu.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.disableDelete">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#enableClearFilter" class="summary-sig-name">enableClearFilter</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Enable the <i>Clear Filer</i> menu.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.enableClearFilter">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#enableDelete" class="summary-sig-name">enableDelete</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Enable the <i>Delete</i> menu.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.enableDelete">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#enableDuplicate" class="summary-sig-name">enableDuplicate</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Enable the <i>Duplicate</i> menu.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.enableDuplicate">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#enableUpdateButton" class="summary-sig-name">enableUpdateButton</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Enable the <i>Update</i> button.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.enableUpdateButton">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#enableUndo" class="summary-sig-name">enableUndo</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Enable the <i>Undo</i> menu.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.enableUndo">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code class="link">bool</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#isEntrySelected" class="summary-sig-name">isEntrySelected</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Verify if an entry is currently selected in the list.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.isEntrySelected">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#openEntryPaper" class="summary-sig-name">openEntryPaper</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Open the paper of the selected entry if its <i>paper</i> field is not
+      empty.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.openEntryPaper">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#popupOpenDialog" class="summary-sig-name">popupOpenDialog</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Open the <i>Open File</i> dialog.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.popupOpenDialog">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#popupSearchDialog" class="summary-sig-name">popupSearchDialog</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Open the <i>Search</i> dialog.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.popupSearchDialog">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#popupUserManualWindow" class="summary-sig-name">popupUserManualWindow</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Open the <i>User Manual</i> window.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.popupUserManualWindow">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#popupConfirmExitDialog" class="summary-sig-name">popupConfirmExitDialog</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Open the <i>Confirm Exit</i> dialog.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.popupConfirmExitDialog">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#popupAboutDialog" class="summary-sig-name">popupAboutDialog</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Open the <i>About</i> dialog.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.popupAboutDialog">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#popupPendingChangesOnExitDialog" class="summary-sig-name">popupPendingChangesOnExitDialog</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Open the <i>Pending Changes</i> dialog.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.popupPendingChangesOnExitDialog">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#popupExportDialog" class="summary-sig-name">popupExportDialog</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Open the <i>Export File</i> dialog.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.popupExportDialog">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#popupImportDialog" class="summary-sig-name">popupImportDialog</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Open the <i>Import File</i> dialog.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.popupImportDialog">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#previewEntryHTML" class="summary-sig-name">previewEntryHTML</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Display the HTML format of the selected entry in the previewer.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.previewEntryHTML">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#popupErrorMessage" class="summary-sig-name">popupErrorMessage</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">msg</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Open a dialog showing an error message.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.popupErrorMessage">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#popupSaveDialog" class="summary-sig-name">popupSaveDialog</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Open the <i>Save As</i> dialog.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.popupSaveDialog">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#popupPreferencesDialog" class="summary-sig-name">popupPreferencesDialog</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Open the <i>Preferences</i> dialog.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.popupPreferencesDialog">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#removeEntryRow" class="summary-sig-name">removeEntryRow</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Delete the row of the selected entry.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.removeEntryRow">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#setStatusMsg" class="summary-sig-name">setStatusMsg</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">msg</span>)</span><br />
+      Set the status bar message</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.setStatusMsg">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#selectCurrentEntryRow" class="summary-sig-name">selectCurrentEntryRow</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Highlight the row of the selected entry.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.selectCurrentEntryRow">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#setDirtyTitle" class="summary-sig-name">setDirtyTitle</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Show that the currently open file has been modified in the title bar 
+      of the window.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.setDirtyTitle">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#updateStatusBar" class="summary-sig-name">updateStatusBar</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">msg</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Display a message in the status bar.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.updateStatusBar">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#unselectEntryRow" class="summary-sig-name">unselectEntryRow</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Unselect the row of the selected entry.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.unselectEntryRow">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#unsetDirtyTitle" class="summary-sig-name">unsetDirtyTitle</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Show that the currently open file has not been changed since its last
+      save in the title bar of the window.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.unsetDirtyTitle">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#updateStatusTotal" class="summary-sig-name">updateStatusTotal</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Display the total number of entries currently displayed in the right 
+      status bar.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.updateStatusTotal">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.controller.Controller-class.html#updateSelectedEntryRow" class="summary-sig-name">updateSelectedEntryRow</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Modify the values in the row of the selected entry.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.controller-pysrc.html#Controller.updateSelectedEntryRow">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== PROPERTIES ==================== -->
+<a name="section-Properties"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Properties</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Properties"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__class__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Method Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-MethodDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="__sendEvent"></a>
+<div class="private">
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__sendEvent</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">e</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.__sendEvent">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Send event <code>e</code> to the statechart.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>e</code></strong> (<code class="link">str</code>) - The event.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="__sendError"></a>
+<div class="private">
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__sendError</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">ex</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.__sendError">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Triggered if an exception occurred. Send an An <code>error</code> 
+  event to the statechart.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>ex</code></strong> (<code class="link">Exception</code>) - The exception.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="__init__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">self</span>)</span>
+    <br /><em class="fname">(Constructor)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.__init__">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>x.__init__(...) initializes x; see help(type(x)) for signature</p>
+  <dl class="fields">
+    <dt>Overrides:
+        object.__init__
+        <dd><em class="note">(inherited documentation)</em></dd>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="__sendAppOperationResult"></a>
+<div class="private">
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__sendAppOperationResult</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">condition</span>=<span class="sig-default">&lt;function &lt;lambda&gt; at 0x034F45F0&gt;</span>,
+        <span class="sig-arg">ex</span>=<span class="sig-default">Exception('An error has occurred.',)</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.__sendAppOperationResult">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Send a <code>success</code> event to the statechart if an operation it
+  called was successful. Otherwise send a <code>fail</code> event.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>condition</code></strong> (<code>function</code>) - A function that returns a <code class="link">bool</code>.</li>
+    </ul></dd>
+    <dt>Returns: <code class="link">bool</code></dt>
+        <dd><code>True</code> if <code>condition()==True</code>, 
+          <code>False</code> otherwise.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="addEntry"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">addEntry</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.addEntry">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Add an entry from its BibTeX format.</p>
+  <p><code>success</code> or <code>fail</code> event is sent to the 
+  statechart if operation is successful or not.</p>
+  <p>An <code>error</code> event is sent to the statechart if <a 
+  href="gui.app_interface.IApplication-class.html#addEntry" 
+  class="link">IApplication.addEntry</a> raised an exception, or <a 
+  href="gui.app_interface.IApplication-class.html#getEntry" 
+  class="link">IApplication.getEntry</a> raised an exception, or <a 
+  href="gui.app_interface.IApplication-class.html#getAllEntries" 
+  class="link">IApplication.getAllEntries</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="aboutClicked"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">aboutClicked</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.aboutClicked">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Triggered when the GUI issues the about command. Send a 
+  <code>aboutClicked</code> event to the statechart.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="addNewEntryRow"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">addNewEntryRow</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.addNewEntryRow">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Add a new row for the newly created entry.</p>
+  <p>An <code>error</code> event is sent to the statechart if the current 
+  entry was not converted into an <a 
+  href="gui.app_interface.EntryDict-class.html" class="link">EntryDict</a>,
+  or <a href="gui.gui.MainWindow-class.html#addNewEntryRow" 
+  class="link">MainWindow.addNewEntryRow</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="addClicked"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">addClicked</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.addClicked">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Triggered when the GUI issues the add command. Send a 
+  <code>addClicked</code> event to the statechart.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="bindApp"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">bindApp</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">application</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.bindApp">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Attach an application to the controller.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>application</code></strong> (<a href="gui.app_interface.IApplication-class.html" 
+          class="link">IApplication</a>) - The application.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="bindGUI"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">bindGUI</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">gui</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.bindGUI">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Attach a GUI to the controller.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>gui</code></strong> (<a href="gui.gui.MainWindow-class.html" 
+          class="link">MainWindow</a>) - The GUI.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="bindSC"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">bindSC</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">statechart</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.bindSC">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Attach a statechart to the controller.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>statechart</code></strong> (<code class="link">statechart</code>) - The statechart.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="colTitleClicked"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">colTitleClicked</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.colTitleClicked">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Triggered when the Title column header is clicked. Send a 
+  <code>colClicked</code> event to the statechart. The corresponding column
+  is stored in the controller data.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="clearStatusBar"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">clearStatusBar</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.clearStatusBar">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Clear any message in the status bar.</p>
+  <p>An <code>error</code> event is sent to the statechart if <a 
+  href="gui.gui.MainWindow-class.html#clearStatusBar" 
+  class="link">MainWindow.clearStatusBar</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="colYearClicked"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">colYearClicked</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.colYearClicked">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Triggered when the Year column header is clicked. Send a 
+  <code>colClicked</code> event to the statechart. The corresponding column
+  is stored in the controller data.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="clearPreviewer"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">clearPreviewer</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.clearPreviewer">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Remove all content from the previewer.</p>
+  <p>An <code>error</code> event is sent to the statechart if <a 
+  href="gui.gui.MainWindow-class.html#clearPreviewer" 
+  class="link">MainWindow.clearPreviewer</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="clearList"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">clearList</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.clearList">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Delete all rows.</p>
+  <p>An <code>error</code> event is sent to the statechart if <a 
+  href="gui.gui.MainWindow-class.html#clearList" 
+  class="link">MainWindow.clearList</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="currentEntryHasPaper"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">currentEntryHasPaper</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.currentEntryHasPaper">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Verify the selected entry has a paper.</p>
+  <dl class="fields">
+    <dt>Returns: <code class="link">bool</code></dt>
+        <dd><code>True</code> if there is a paper, <code>False</code> 
+          otherwise.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="colKeyClicked"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">colKeyClicked</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.colKeyClicked">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Triggered when the Key column header is clicked. Send a 
+  <code>colClicked</code> event to the statechart. The corresponding column
+  is stored in the controller data.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="colPaperClicked"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">colPaperClicked</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.colPaperClicked">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Triggered when the Paper column header is clicked. Send a 
+  <code>colClicked</code> event to the statechart. The corresponding column
+  is stored in the controller data.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="colIdClicked"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">colIdClicked</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.colIdClicked">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Triggered when the Id column header is clicked. Send a 
+  <code>colClicked</code> event to the statechart. The corresponding column
+  is stored in the controller data.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="clearEditor"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">clearEditor</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.clearEditor">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Remove all the text from the editor.</p>
+  <p>An <code>error</code> event is sent to the statechart if <a 
+  href="gui.gui.MainWindow-class.html#clearEditor" 
+  class="link">MainWindow.clearEditor</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="colAuthorClicked"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">colAuthorClicked</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.colAuthorClicked">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Triggered when the Author column header is clicked. Send a 
+  <code>colClicked</code> event to the statechart. The corresponding column
+  is stored in the controller data.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="cancelClicked"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">cancelClicked</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.cancelClicked">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Triggered when a cancel button is clicked. Send a 
+  <code>cancelClicked</code> event to the statechart.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="colTypeClicked"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">colTypeClicked</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.colTypeClicked">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Triggered when the Type column header is clicked. Send a 
+  <code>colClicked</code> event to the statechart. The corresponding column
+  is stored in the controller data.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="clearFilterClicked"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">clearFilterClicked</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.clearFilterClicked">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Triggered when the GUI issues the clear filter command. Send a 
+  <code>clearFilterClicked</code> event to the statechart.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="disableUpdateButton"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">disableUpdateButton</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.disableUpdateButton">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Disable the <i>Update</i> button.</p>
+  <p>An <code>error</code> event is sent to the statechart if <a 
+  href="gui.gui.MainWindow-class.html#disableUpdateButton" 
+  class="link">MainWindow.disableUpdateButton</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="deleteClicked"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">deleteClicked</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.deleteClicked">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Triggered when the GUI issues the delete command. Send a 
+  <code>deleteClicked</code> event to the statechart.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="disableUndo"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">disableUndo</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.disableUndo">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Disable the <i>Undo</i> menu.</p>
+  <p>An <code>error</code> event is sent to the statechart if <a 
+  href="gui.gui.MainWindow-class.html#disableUndo" 
+  class="link">MainWindow.disableUndo</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="displayBibTexInEditor"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">displayBibTexInEditor</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.displayBibTexInEditor">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Replace text in the BibTeX editor with the BibTeX format of the 
+  selected entry.</p>
+  <p>An <code>error</code> event is sent to the statechart if the entry was
+  not converted to BibTeX format or <a 
+  href="gui.gui.MainWindow-class.html#displayBibTexInEditor" 
+  class="link">MainWindow.displayBibTexInEditor</a> raised an 
+  exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="deleteEntry"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">deleteEntry</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.deleteEntry">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Delete the selected entry.</p>
+  <p><code>success</code> or <code>fail</code> event is sent to the 
+  statechart if operation is successful or not.</p>
+  <p>An <code>error</code> event is sent to the statechart if no entry was 
+  selected <a href="gui.app_interface.IApplication-class.html#deleteEntry" 
+  class="link">IApplication.deleteEntry</a> raised an exception, or <a 
+  href="gui.app_interface.IApplication-class.html#getAllEntries" 
+  class="link">IApplication.getAllEntries</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="disableClearFilter"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">disableClearFilter</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.disableClearFilter">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Disable the <i>Clear Filer</i> menu.</p>
+  <p>An <code>error</code> event is sent to the statechart if <a 
+  href="gui.gui.MainWindow-class.html#disableClearFilter" 
+  class="link">MainWindow.disableClearFilter</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="duplicateClicked"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">duplicateClicked</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.duplicateClicked">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Triggered when the GUI issues the duplicate command. Send a 
+  <code>duplicateClicked</code> event to the statechart.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="disableDuplicate"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">disableDuplicate</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.disableDuplicate">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Disable the <i>Duplicate</i> menu.</p>
+  <p>An <code>error</code> event is sent to the statechart if <a 
+  href="gui.gui.MainWindow-class.html#disableDuplicate" 
+  class="link">MainWindow.disableDuplicate</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="duplicateEntry"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">duplicateEntry</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.duplicateEntry">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Duplicate the selected entry.</p>
+  <p><code>success</code> or <code>fail</code> event is sent to the 
+  statechart if operation is successful or not.</p>
+  <p>An <code>error</code> event is sent to the statechart if no entry was 
+  selected <a 
+  href="gui.app_interface.IApplication-class.html#duplicateEntry" 
+  class="link">IApplication.duplicateEntry</a> raised an exception, <a 
+  href="gui.app_interface.IApplication-class.html#getEntry" 
+  class="link">IApplication.getEntry</a> raised an exception, or <a 
+  href="gui.app_interface.IApplication-class.html#getAllEntries" 
+  class="link">IApplication.getAllEntries</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="displayEntries"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">displayEntries</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.displayEntries">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Display the currently loaded entries in the list of entries.</p>
+  <p>An <code>error</code> event is sent to the statechart if there is no 
+  entry list displayed or <a 
+  href="gui.gui.MainWindow-class.html#displayEntries" 
+  class="link">MainWindow.displayEntries</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="disableDelete"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">disableDelete</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.disableDelete">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Disable the <i>Delete</i> menu.</p>
+  <p>An <code>error</code> event is sent to the statechart if <a 
+  href="gui.gui.MainWindow-class.html#disableDelete" 
+  class="link">MainWindow.disableDelete</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="entryDoubleClicked"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">entryDoubleClicked</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">entryId</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.entryDoubleClicked">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Triggered when an entry is double-clicked in the entry list. Send a 
+  <code>entryDoubleClicked</code> event to the statechart.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>entryId</code></strong> (<code class="link">int</code>) - The <i>id</i> of the entry. It is stored in the controller data.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="exportFile"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">exportFile</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.exportFile">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Export a file to a selected path in a given format.</p>
+  <p><code>success</code> or <code>fail</code> event is sent to the 
+  statechart if operation is successful or not.</p>
+  <p>An <code>error</code> event is sent to the statechart if no file was 
+  selected, the export format is undefined, or <a 
+  href="gui.app_interface.IApplication-class.html#exportFile" 
+  class="link">IApplication.exportFile</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="enableClearFilter"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">enableClearFilter</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.enableClearFilter">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Enable the <i>Clear Filer</i> menu.</p>
+  <p>An <code>error</code> event is sent to the statechart if <a 
+  href="gui.gui.MainWindow-class.html#enableClearFilter" 
+  class="link">MainWindow.enableClearFilter</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="exportFileSelected"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">exportFileSelected</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">path</span>,
+        <span class="sig-arg">exportFormat</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.exportFileSelected">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Triggered when a file to export to is selected. Send a 
+  <code>exportFileSelected</code> event to the statechart.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>path</code></strong> (<code class="link">str</code>) - The path to a file. It is stored in the controller data.</li>
+        <li><strong class="pname"><code>exportFormat</code></strong> (<a href="utils.settings.ExportFormat-class.html" 
+          class="link">settings.ExportFormat</a>) - The format of the file. It is stored in the controller data.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="entrySelected"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">entrySelected</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">entryId</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.entrySelected">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Triggered when an entry is selected in the entry list. Send a 
+  <code>entrySelected</code> event to the statechart.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>entryId</code></strong> (<code class="link">int</code>) - The <i>id</i> of the entry. It is stored in the controller data.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="enableDelete"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">enableDelete</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.enableDelete">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Enable the <i>Delete</i> menu.</p>
+  <p>An <code>error</code> event is sent to the statechart if <a 
+  href="gui.gui.MainWindow-class.html#enableDelete" 
+  class="link">MainWindow.enableDelete</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="entryDeselected"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">entryDeselected</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.entryDeselected">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Triggered when no entry is selected in the entry list. Send a 
+  <code>entryDeselected</code> event to the statechart.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="enableDuplicate"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">enableDuplicate</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.enableDuplicate">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Enable the <i>Duplicate</i> menu.</p>
+  <p>An <code>error</code> event is sent to the statechart if <a 
+  href="gui.gui.MainWindow-class.html#enableDuplicate" 
+  class="link">MainWindow.enableDuplicate</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="exit"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">exit</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.exit">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>End the GUI and the application. Sends an <code>exit</code> event to 
+  the statechart.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="exitClicked"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">exitClicked</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.exitClicked">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Triggered when the GUI window was requested to be closed. Send an 
+  <code>exitClicked</code> event to the statechart.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="enableUpdateButton"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">enableUpdateButton</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.enableUpdateButton">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Enable the <i>Update</i> button.</p>
+  <p>An <code>error</code> event is sent to the statechart if <a 
+  href="gui.gui.MainWindow-class.html#enableUpdateButton" 
+  class="link">MainWindow.enableUpdateButton</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="exportClicked"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">exportClicked</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.exportClicked">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Triggered when the GUI issues the export command. Send a 
+  <code>exportClicked</code> event to the statechart.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="enableUndo"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">enableUndo</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.enableUndo">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Enable the <i>Undo</i> menu.</p>
+  <p>An <code>error</code> event is sent to the statechart if <a 
+  href="gui.gui.MainWindow-class.html#enableUndo" 
+  class="link">MainWindow.enableUndo</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="filterClicked"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">filterClicked</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">query</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.filterClicked">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Triggered when the GUI issued the filter command. Send a 
+  <code>filterClicked</code> event to the statechart.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>query</code></strong> (<code class="link">str</code>) - The search query. It is stored in the controller data.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="forceExitClicked"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">forceExitClicked</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.forceExitClicked">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Triggered when the GUI ignores to save pending changes and exit was 
+  requested. Send a <code>forceExitClicked</code> event to the 
+  statechart.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="getBibTeX"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">getBibTeX</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.getBibTeX">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Convert the selected entry to its BibTeX format.</p>
+  <p><code>success</code> or <code>fail</code> event is sent to the 
+  statechart if operation is successful or not.</p>
+  <p>An <code>error</code> event is sent to the statechart if no entry was 
+  selected or <a href="gui.app_interface.IApplication-class.html#getBibTeX"
+  class="link">IApplication.getBibTeX</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="getEntryCount"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">getEntryCount</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.getEntryCount">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get the total number of entries currently displayed.</p>
+  <p>An <code>error</code> event is sent to the statechart if there is no 
+  entry list displayed.</p>
+  <dl class="fields">
+    <dt>Returns: <code class="link">int</code></dt>
+        <dd>The total number of entries.</dd>
+  </dl>
+<div class="fields">      <p><strong>Note:</strong>
+        A total of 0 is not considered as an error.
+      </p>
+</div></td></tr></table>
+</div>
+<a name="getAllEntries"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">getAllEntries</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.getAllEntries">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Load all entries in <a href="gui.app_interface.EntryDict-class.html" 
+  class="link">EntryDict</a> format.</p>
+  <p><code>success</code> or <code>fail</code> event is sent to the 
+  statechart if operation is successful or not.</p>
+  <p>An <code>error</code> event is sent to the statechart if no entry was 
+  loaded or <a 
+  href="gui.app_interface.IApplication-class.html#getAllEntries" 
+  class="link">IApplication.getAllEntries</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="getEntryPaperURL"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">getEntryPaperURL</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.getEntryPaperURL">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get the URL of the paper of the selected entry.</p>
+  <p><code>success</code> or <code>fail</code> event is sent to the 
+  statechart if operation is successful or not.</p>
+  <p>An <code>error</code> event is sent to the statechart if no entry was 
+  selected or <a href="gui.app_interface.IApplication-class.html#sort" 
+  class="link">IApplication.sort</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="hasUndoableActionLeft"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">hasUndoableActionLeft</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.hasUndoableActionLeft">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Verify if there is any action to undo.</p>
+  <p>An <code>error</code> event is sent to the statechart if <a 
+  href="gui.app_interface.IApplication-class.html#hasUndoableActionLeft" 
+  class="link">IApplication.hasUndoableActionLeft</a> raised an 
+  exception.</p>
+  <dl class="fields">
+    <dt>Returns: <code class="link">bool</code></dt>
+        <dd><code>True</code> if there is an action to undo, 
+          <code>False</code> otherwise.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="isBibtexFileLoaded"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">isBibtexFileLoaded</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.isBibtexFileLoaded">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Verify if a BibTeX file is currently open.</p>
+  <dl class="fields">
+    <dt>Returns: <code class="link">bool</code></dt>
+        <dd><code>True</code> a BibTeX file is open, <code>False</code> 
+          otherwise.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="importFile"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">importFile</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.importFile">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Import a file from a selected path in a given format.</p>
+  <p><code>success</code> or <code>fail</code> event is sent to the 
+  statechart if operation is successful or not.</p>
+  <p>An <code>error</code> event is sent to the statechart if no file was 
+  selected, the import format is undefined, <a 
+  href="gui.app_interface.IApplication-class.html#importFile" 
+  class="link">IApplication.importFile</a> raised an exception, or <a 
+  href="gui.app_interface.IApplication-class.html#getAllEntries" 
+  class="link">IApplication.getAllEntries</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="importFileSelected"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">importFileSelected</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">path</span>,
+        <span class="sig-arg">importFormat</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.importFileSelected">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Triggered when the GUI a file to import is selected. Send a 
+  <code>importFileSelected</code> event to the statechart.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>path</code></strong> (<code class="link">str</code>) - The path to a file. It is stored in the controller data.</li>
+        <li><strong class="pname"><code>importFormat</code></strong> (<a href="utils.settings.ImportFormat-class.html" 
+          class="link">settings.ImportFormat</a>) - The format of the file. It is stored in the controller data.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="importClicked"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">importClicked</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.importClicked">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Triggered when the GUI issues the import command. Send a 
+  <code>importClicked</code> event to the statechart.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="isEntrySelected"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">isEntrySelected</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.isEntrySelected">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Verify if an entry is currently selected in the list.</p>
+  <p>An <code>error</code> event is sent to the statechart if or <a 
+  href="gui.gui.MainWindow-class.html#isEntrySelected" 
+  class="link">MainWindow.isEntrySelected</a> raised an exception.</p>
+  <dl class="fields">
+    <dt>Returns: <code class="link">bool</code></dt>
+        <dd><code>True</code> an entry is selected, <code>False</code> 
+          otherwise.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="manualClicked"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">manualClicked</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.manualClicked">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Triggered when the GUI issues the user manual command. Send a 
+  <code>manualClicked</code> event to the statechart.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="openFile"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">openFile</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.openFile">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Import a BibTeX file from a selected path.</p>
+  <p><code>success</code> or <code>fail</code> event is sent to the 
+  statechart if operation is successful or not.</p>
+  <p>An <code>error</code> event is sent to the statechart if no file was 
+  selected, the import format is undefined, <a 
+  href="gui.app_interface.IApplication-class.html#importFile" 
+  class="link">IApplication.importFile</a> raised an exception, or <a 
+  href="gui.app_interface.IApplication-class.html#getAllEntries" 
+  class="link">IApplication.getAllEntries</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="openEntryPaper"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">openEntryPaper</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.openEntryPaper">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Open the paper of the selected entry if its <i>paper</i> field is not 
+  empty.</p>
+  <p>An <code>error</code> event is sent to the statechart if the entry has
+  no paper or <a href="gui.gui.MainWindow-class.html#openURL" 
+  class="link">MainWindow.openURL</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="openClicked"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">openClicked</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.openClicked">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Triggered when the GUI issues the open command. Send an 
+  <code>openClicked</code> event to the statechart.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="openFileSelected"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">openFileSelected</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">path</span>,
+        <span class="sig-arg">importFormat</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.openFileSelected">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Triggered when a file to open is selected. Send a 
+  <code>openFileSelected</code> event to the statechart.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>path</code></strong> (<code class="link">str</code>) - The path to a file. It is stored in the controller data.</li>
+        <li><strong class="pname"><code>importFormat</code></strong> (<a href="utils.settings.ImportFormat-class.html" 
+          class="link">settings.ImportFormat</a>) - The format of the file. It is stored in the controller data.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="popupOpenDialog"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">popupOpenDialog</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.popupOpenDialog">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Open the <i>Open File</i> dialog.</p>
+  <p>An <code>error</code> event is sent to the statechart if <a 
+  href="gui.gui.MainWindow-class.html#popupOpenDialog" 
+  class="link">MainWindow.popupOpenDialog</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="popupSearchDialog"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">popupSearchDialog</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.popupSearchDialog">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Open the <i>Search</i> dialog.</p>
+  <p>An <code>error</code> event is sent to the statechart if <a 
+  href="gui.gui.MainWindow-class.html#popupSearchDialog" 
+  class="link">MainWindow.popupSearchDialog</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="preferencesChanged"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">preferencesChanged</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.preferencesChanged">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Triggered when the preferences of the GUI have changed. Send a 
+  <code>preferencesChanged</code> event to the statechart.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="preferencesClicked"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">preferencesClicked</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.preferencesClicked">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Triggered when the GUI issues the preferences command. Send a 
+  <code>preferencesClicked</code> event to the statechart.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="popupUserManualWindow"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">popupUserManualWindow</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.popupUserManualWindow">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Open the <i>User Manual</i> window.</p>
+  <p>An <code>error</code> event is sent to the statechart if <a 
+  href="gui.gui.MainWindow-class.html#popupUserManualWindow" 
+  class="link">MainWindow.popupUserManualWindow</a> raised an 
+  exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="popupConfirmExitDialog"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">popupConfirmExitDialog</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.popupConfirmExitDialog">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Open the <i>Confirm Exit</i> dialog.</p>
+  <p>An <code>error</code> event is sent to the statechart if <a 
+  href="gui.gui.MainWindow-class.html#popupConfirmExitDialog" 
+  class="link">MainWindow.popupConfirmExitDialog</a> raised an 
+  exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="previewEntry"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">previewEntry</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.previewEntry">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Preview the selected entry in the preferred style.</p>
+  <p><code>success</code> or <code>fail</code> event is sent to the 
+  statechart if operation is successful or not.</p>
+  <p>An <code>error</code> event is sent to the statechart if no entry was 
+  selected or <a 
+  href="gui.app_interface.IApplication-class.html#previewEntry" 
+  class="link">IApplication.previewEntry</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="popupAboutDialog"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">popupAboutDialog</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.popupAboutDialog">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Open the <i>About</i> dialog.</p>
+  <p>An <code>error</code> event is sent to the statechart if <a 
+  href="gui.gui.MainWindow-class.html#popupAboutDialog" 
+  class="link">MainWindow.popupAboutDialog</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="popupPendingChangesOnExitDialog"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">popupPendingChangesOnExitDialog</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.popupPendingChangesOnExitDialog">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Open the <i>Pending Changes</i> dialog.</p>
+  <p>An <code>error</code> event is sent to the statechart if <a 
+  href="gui.gui.MainWindow-class.html#popupPendingChangesOnExitDialog" 
+  class="link">MainWindow.popupPendingChangesOnExitDialog</a> raised an 
+  exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="popupExportDialog"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">popupExportDialog</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.popupExportDialog">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Open the <i>Export File</i> dialog.</p>
+  <p>An <code>error</code> event is sent to the statechart if <a 
+  href="gui.gui.MainWindow-class.html#popupExportDialog" 
+  class="link">MainWindow.popupExportDialog</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="popupImportDialog"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">popupImportDialog</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.popupImportDialog">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Open the <i>Import File</i> dialog.</p>
+  <p>An <code>error</code> event is sent to the statechart if <a 
+  href="gui.gui.MainWindow-class.html#popupImportDialog" 
+  class="link">MainWindow.popupImportDialog</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="previewEntryHTML"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">previewEntryHTML</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.previewEntryHTML">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Display the HTML format of the selected entry in the previewer.</p>
+  <p>An <code>error</code> event is sent to the statechart if the entry was
+  not converted to HTML format or <a 
+  href="gui.gui.MainWindow-class.html#previewEntry" 
+  class="link">MainWindow.previewEntry</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="popupErrorMessage"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">popupErrorMessage</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">msg</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.popupErrorMessage">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Open a dialog showing an error message.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>msg</code></strong> (<code class="link">str</code>) - The message to display.
+          <p>An <code>error</code> event is sent to the statechart if <a 
+          href="gui.gui.MainWindow-class.html#popupErrorMessage" 
+          class="link">MainWindow.popupErrorMessage</a> raised an 
+          exception.</p></li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="popupSaveDialog"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">popupSaveDialog</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.popupSaveDialog">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Open the <i>Save As</i> dialog.</p>
+  <p>An <code>error</code> event is sent to the statechart if <a 
+  href="gui.gui.MainWindow-class.html#popupSaveDialog" 
+  class="link">MainWindow.popupSaveDialog</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="popupPreferencesDialog"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">popupPreferencesDialog</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.popupPreferencesDialog">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Open the <i>Preferences</i> dialog.</p>
+  <p>An <code>error</code> event is sent to the statechart if <a 
+  href="gui.gui.MainWindow-class.html#popupPreferencesDialog" 
+  class="link">MainWindow.popupPreferencesDialog</a> raised an 
+  exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="removeEntryRow"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">removeEntryRow</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.removeEntryRow">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Delete the row of the selected entry.</p>
+  <p>An <code>error</code> event is sent to the statechart if there is no 
+  entry was selected or <a 
+  href="gui.gui.MainWindow-class.html#removeEntryRow" 
+  class="link">MainWindow.removeEntryRow</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="saveFile"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">saveFile</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.saveFile">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Export a BibTeX file to a selected path.</p>
+  <p><code>success</code> or <code>fail</code> event is sent to the 
+  statechart if operation is successful or not.</p>
+  <p>An <code>error</code> event is sent to the statechart if no file was 
+  selected, the export format is undefined, or <a 
+  href="gui.app_interface.IApplication-class.html#exportFile" 
+  class="link">IApplication.exportFile</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="saveFileSelected"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">saveFileSelected</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">path</span>,
+        <span class="sig-arg">exportFormat</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.saveFileSelected">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Triggered when a file to save to is selected. Send a 
+  <code>saveFileSelected</code> event to the statechart.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>path</code></strong> (<code class="link">str</code>) - The path to a file. It is stored in the controller data.</li>
+        <li><strong class="pname"><code>exportFormat</code></strong> (<a href="utils.settings.ExportFormat-class.html" 
+          class="link">settings.ExportFormat</a>) - The format of the file. It is stored in the controller data.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="saveClicked"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">saveClicked</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">exportFormat</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.saveClicked">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Triggered when the GUI issues the save command. Send a 
+  <code>saveClicked</code> event to the statechart.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>exportFormat</code></strong> (<a href="utils.settings.ExportFormat-class.html" 
+          class="link">settings.ExportFormat</a>) - The format to export to. It is stored in the controller data.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="start"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">start</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.start">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Start the GUI, the application, and the statechart. Sends a 
+  <code>start</code> event to the statechart.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="setStatusMsg"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">setStatusMsg</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">msg</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.setStatusMsg">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Set the status bar message</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>msg</code></strong> (<code class="link">str</code>) - The message to display.
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>setStatusMsg(<span class="py-string">'hello'</span>)
+<span class="py-prompt">&gt;&gt;&gt; </span>updateStatusBar()    <span class="py-comment"># will display hello</span></pre></li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="selectCurrentEntryRow"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">selectCurrentEntryRow</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.selectCurrentEntryRow">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Highlight the row of the selected entry.</p>
+  <p>An <code>error</code> event is sent to the statechart if there is no 
+  entry was selected or <a 
+  href="gui.gui.MainWindow-class.html#selectEntryRow" 
+  class="link">MainWindow.selectEntryRow</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="searchClicked"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">searchClicked</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.searchClicked">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Triggered when the GUI issues the search command. Send a 
+  <code>searchClicked</code> event to the statechart.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="sort"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">sort</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.sort">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Sort all entries with respect to the field corresponding to the 
+  selected column.</p>
+  <p><code>success</code> or <code>fail</code> event is sent to the 
+  statechart if operation is successful or not.</p>
+  <p>An <code>error</code> event is sent to the statechart if no column was
+  selected or <a href="gui.app_interface.IApplication-class.html#sort" 
+  class="link">IApplication.sort</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="saveAsClicked"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">saveAsClicked</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.saveAsClicked">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Triggered when the GUI issues the save as command. Send a 
+  <code>saveAsClicked</code> event to the statechart.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="search"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">search</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.search">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Search for entries that satisfy the query provided.</p>
+  <p><code>success</code> or <code>fail</code> event is sent to the 
+  statechart if operation is successful or not.</p>
+  <p>An <code>error</code> event is sent to the statechart if no search 
+  query was provided or <a 
+  href="gui.app_interface.IApplication-class.html#search" 
+  class="link">IApplication.search</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="setDirtyTitle"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">setDirtyTitle</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.setDirtyTitle">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Show that the currently open file has been modified in the title bar 
+  of the window.</p>
+  <p>An <code>error</code> event is sent to the statechart if or <a 
+  href="gui.gui.MainWindow-class.html#setDirtyTitle" 
+  class="link">MainWindow.setDirtyTitle</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="textChangedInEditor"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">textChangedInEditor</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">text</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.textChangedInEditor">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Triggered when the text in the editor has changed. Send a 
+  <code>textChangedInEditor</code> event to the statechart. It is stored in
+  the controller data.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>text</code></strong> (<code class="link">str</code>) - The new text.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="updateStatusBar"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">updateStatusBar</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">msg</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.updateStatusBar">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Display a message in the status bar.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>msg</code></strong> (<code class="link">str</code>) - The message to display.
+          <p>An <code>error</code> event is sent to the statechart if <a 
+          href="gui.gui.MainWindow-class.html#updateStatusBar" 
+          class="link">MainWindow.updateStatusBar</a> raised an 
+          exception.</p></li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="unselectEntryRow"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">unselectEntryRow</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.unselectEntryRow">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Unselect the row of the selected entry.</p>
+  <p>An <code>error</code> event is sent to the statechart if <a 
+  href="gui.gui.MainWindow-class.html#unselectEntryRow" 
+  class="link">MainWindow.unselectEntryRow</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="unsetDirtyTitle"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">unsetDirtyTitle</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.unsetDirtyTitle">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Show that the currently open file has not been changed since its last 
+  save in the title bar of the window.</p>
+  <p>An <code>error</code> event is sent to the statechart if or <a 
+  href="gui.gui.MainWindow-class.html#unsetDirtyTitle" 
+  class="link">MainWindow.unsetDirtyTitle</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="updateStatusTotal"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">updateStatusTotal</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.updateStatusTotal">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Display the total number of entries currently displayed in the right 
+  status bar.</p>
+  <p>An <code>error</code> event is sent to the statechart if <a 
+  href="gui.gui.MainWindow-class.html#updateStatusBarTotal" 
+  class="link">MainWindow.updateStatusBarTotal</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="undoClicked"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">undoClicked</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.undoClicked">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Triggered when the GUI issues the undo command. Send a 
+  <code>undoClicked</code> event to the statechart.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="updateEntry"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">updateEntry</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.updateEntry">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Update the selected entry from its BibTeX format.</p>
+  <p><code>success</code> or <code>fail</code> event is sent to the 
+  statechart if operation is successful or not.</p>
+  <p>An <code>error</code> event is sent to the statechart if no entry was 
+  selected, the entry was not converted to BibTeX format, <a 
+  href="gui.app_interface.IApplication-class.html#getEntry" 
+  class="link">IApplication.getEntry</a> raised an exception, or <a 
+  href="gui.app_interface.IApplication-class.html#updateEntry" 
+  class="link">IApplication.updateEntry</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="updatedButtonClicked"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">updatedButtonClicked</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">entryBibTeX</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.updatedButtonClicked">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Triggered when a reference must be updated. Send a 
+  <code>updatedButtonClicked</code> event to the statechart.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>entryBibTeX</code></strong> (<code class="link">str</code>) - The BibTeX representation of the reference. It is stored in the 
+          controller data.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="updateSelectedEntryRow"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">updateSelectedEntryRow</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.updateSelectedEntryRow">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Modify the values in the row of the selected entry.</p>
+  <p>An <code>error</code> event is sent to the statechart if the current 
+  entry was not converted into an <a 
+  href="gui.app_interface.EntryDict-class.html" class="link">EntryDict</a>,
+  or <a href="gui.gui.MainWindow-class.html#updateSelectedEntryRow" 
+  class="link">MainWindow.updateSelectedEntryRow</a> raised an 
+  exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="undo"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">undo</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.controller-pysrc.html#Controller.undo">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Undo the last action performed.</p>
+  <p><code>success</code> or <code>fail</code> event is sent to the 
+  statechart if operation is successful or not.</p>
+  <p>An <code>error</code> event is sent to the statechart if or <a 
+  href="gui.app_interface.IApplication-class.html#undo" 
+  class="link">IApplication.undo</a> raised an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Wed Jan 22 13:16:35 2014
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

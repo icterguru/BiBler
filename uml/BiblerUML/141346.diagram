@@ -1,0 +1,74 @@
+format 76
+
+classinstancecanvas 128034 classinstance_ref 141730 // 
+  xyz 84 4 2000 life_line_z 2000
+end
+classinstancecanvas 128546 classinstance_ref 134690 // refManager
+  xyz 196 4 2000 life_line_z 2000
+end
+classinstancecanvas 129186 classinstance_ref 141858 // 
+  xyz 428 4 2000 life_line_z 2000
+end
+fragment 129954 "alt"
+  xyzwh 75 189 2000 298 153
+  separator 4215
+end
+durationcanvas 128162 classinstance_ref 128034 // :UserInterface
+  xyzwh 119 75 2010 11 236
+end
+durationcanvas 128930 classinstance_ref 128546 // refManager:ReferenceManager
+  xyzwh 272 92 2010 11 213
+  overlappingdurationcanvas 129698
+    xyzwh 278 168 2020 11 25
+  end
+end
+durationcanvas 129314 classinstance_ref 129186 // :copy
+  xyzwh 447 107 2010 11 47
+end
+lostfoundmsgsupport 128290 xyz 18 77 2015
+msg 128418 found_asynchronous
+  from lostfoundmsgsupport_ref 128290
+  to durationcanvas_ref 128162
+  yz 75 2015 msg operation_ref 134818 // "duplicateEntry(in self : , in entryId : int) : int"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  args "entryId"
+  label_xy 10 61
+msg 129058 asynchronous
+  from durationcanvas_ref 128162
+  to durationcanvas_ref 128930
+  yz 93 2015 msg operation_ref 143778 // "duplicate(in self : , in entryId : int) : int"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  args "entryId"
+  label_xy 159 79
+msg 129442 asynchronous
+  from durationcanvas_ref 128930
+  to durationcanvas_ref 129314
+  yz 108 2020 explicitmsg "deepcopy"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  args "entry"
+  label_xy 341 94
+msg 129570 return
+  from durationcanvas_ref 129314
+  to durationcanvas_ref 128930
+  yz 143 2015 explicitmsg "copy of object"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 331 129
+reflexivemsg 129826 asynchronous
+  to durationcanvas_ref 129698
+  yz 169 2025 msg operation_ref 143138 // "generateKey(in self : , in author : string, in year : string) : string"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  args "author, year"
+  label_xy 287 156
+msg 130082 return
+  from durationcanvas_ref 128930
+  to durationcanvas_ref 128162
+  yz 222 2015 explicitmsg "lastId if valid entryId"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 154 208
+msg 130210 return
+  from durationcanvas_ref 128930
+  to durationcanvas_ref 128162
+  yz 295 2015 explicitmsg "None if invalid entryId"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 150 281
+end

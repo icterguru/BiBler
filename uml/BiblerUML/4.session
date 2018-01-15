@@ -1,0 +1,14 @@
+window_sizes 1366 706 231 1129 597 35
+diagrams
+  active  classdiagram_ref 128009 // app
+    1129 597 98 3 0 0
+end
+show_stereotypes
+selected 
+  package_ref 129 // BiblerUML
+open
+  classview_ref 147939 // Packages
+  classview_ref 128009 // Class
+  deploymentview_ref 134562 // Deployment
+end
+end

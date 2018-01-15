@@ -1,0 +1,984 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>gui.app_interface.IApplication</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="gui-module.html">Package&nbsp;gui</a> ::
+        <a href="gui.app_interface-module.html">Module&nbsp;app_interface</a> ::
+        Class&nbsp;IApplication
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="gui.app_interface.IApplication-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class IApplication</h1><p class="nomargin-top"><span class="codelink"><a href="gui.app_interface-pysrc.html#IApplication">source&nbsp;code</a></span></p>
+<center>
+<center>  <map id="class_hierarchy_for_iapplicati" name="class_hierarchy_for_iapplicati">
+<area shape="rect" id="node1" href="app.UserInterface.UserInterface-class.html" title="app.UserInterface.UserInterface" alt="" coords="5,62,240,87"/>
+<area shape="rect" id="node2" href="gui.app_interface.IApplication-class.html" title="IApplication" alt="" coords="73,6,172,31"/>
+</map>
+  <img src="class_hierarchy_for_iapplicati.gif" alt='' usemap="#class_hierarchy_for_iapplicati" ismap="ismap" class="graph-without-title" />
+</center>
+</center>
+<hr />
+<p>Interface that provides all the application functions required for the
+  <a href="gui.controller.Controller-class.html" 
+  class="link">Controller</a>. The meaning of every operation in the BiBler
+  GUI is given by these functions.</p>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="start"></a><span class="summary-sig-name">start</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Start the application.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.app_interface-pysrc.html#IApplication.start">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="exit"></a><span class="summary-sig-name">exit</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Close the application.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.app_interface-pysrc.html#IApplication.exit">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code class="link">bool</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.app_interface.IApplication-class.html#importFile" class="summary-sig-name">importFile</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">path</span>,
+        <span class="summary-sig-arg">importFormat</span>)</span><br />
+      Import a list of entries from a file in a given format.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.app_interface-pysrc.html#IApplication.importFile">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code class="link">bool</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.app_interface.IApplication-class.html#exportFile" class="summary-sig-name">exportFile</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">path</span>,
+        <span class="summary-sig-arg">exportFormat</span>)</span><br />
+      Export the list of entries to a file in a given format.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.app_interface-pysrc.html#IApplication.exportFile">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code class="link">int</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.app_interface.IApplication-class.html#addEntry" class="summary-sig-name">addEntry</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">entryBibTeX</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Add a new entry.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.app_interface-pysrc.html#IApplication.addEntry">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code class="link">int</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.app_interface.IApplication-class.html#duplicateEntry" class="summary-sig-name">duplicateEntry</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">entryId</span>)</span><br />
+      Create a copy of an existing entry.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.app_interface-pysrc.html#IApplication.duplicateEntry">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code class="link">bool</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.app_interface.IApplication-class.html#updateEntry" class="summary-sig-name">updateEntry</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">entryId</span>,
+        <span class="summary-sig-arg">entryBibTeX</span>)</span><br />
+      Update an entry with a new BibTeX reference.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.app_interface-pysrc.html#IApplication.updateEntry">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code class="link">bool</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.app_interface.IApplication-class.html#deleteEntry" class="summary-sig-name">deleteEntry</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">entryId</span>)</span><br />
+      Delete an entry.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.app_interface-pysrc.html#IApplication.deleteEntry">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code class="link">str</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.app_interface.IApplication-class.html#previewEntry" class="summary-sig-name">previewEntry</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">entryId</span>)</span><br />
+      Convert an entry into its HTML representation following the 
+      bibliography style specified in <a 
+      href="utils.settings.Preferences-class.html" 
+      class="link">utils.settings.Preferences</a>.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.app_interface-pysrc.html#IApplication.previewEntry">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code class="link">bool</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.app_interface.IApplication-class.html#undo" class="summary-sig-name">undo</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Undo the last action performed.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.app_interface-pysrc.html#IApplication.undo">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code class="link">bool</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.app_interface.IApplication-class.html#hasUndoableActionLeft" class="summary-sig-name">hasUndoableActionLeft</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Verify if there is any action to undo.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.app_interface-pysrc.html#IApplication.hasUndoableActionLeft">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code class="link">str</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.app_interface.IApplication-class.html#getEntryPaperURL" class="summary-sig-name">getEntryPaperURL</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">entryId</span>)</span><br />
+      Get the URL of the paper of the selected entry.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.app_interface-pysrc.html#IApplication.getEntryPaperURL">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code class="link">bool</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.app_interface.IApplication-class.html#search" class="summary-sig-name">search</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">query</span>)</span><br />
+      Search for entries that satisfy the query provided.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.app_interface-pysrc.html#IApplication.search">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code class="link">bool</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.app_interface.IApplication-class.html#sort" class="summary-sig-name">sort</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">field</span>)</span><br />
+      Inplace sort of in alphabetically increasing order all entries with 
+      respect to a field.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.app_interface-pysrc.html#IApplication.sort">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><a href="gui.app_interface.EntryDict-class.html" 
+      class="link">EntryDict</a></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.app_interface.IApplication-class.html#getEntry" class="summary-sig-name">getEntry</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">entryId</span>)</span><br />
+      Convert an entry into an <a 
+      href="gui.app_interface.EntryDict-class.html" 
+      class="link">EntryDict</a>.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.app_interface-pysrc.html#IApplication.getEntry">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code class="link">str</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.app_interface.IApplication-class.html#getBibTeX" class="summary-sig-name">getBibTeX</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">entryId</span>)</span><br />
+      Convert an entry into its BibTeX reference.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.app_interface-pysrc.html#IApplication.getBibTeX">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code class="link">list</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.app_interface.IApplication-class.html#getAllEntries" class="summary-sig-name">getAllEntries</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Get the list of all entries converted into <a 
+      href="gui.app_interface.EntryDict-class.html" 
+      class="link">EntryDict</a>.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.app_interface-pysrc.html#IApplication.getAllEntries">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code class="link">int</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.app_interface.IApplication-class.html#getEntryCount" class="summary-sig-name">getEntryCount</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Get the total number of entries.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.app_interface-pysrc.html#IApplication.getEntryCount">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><a href="gui.app_interface.EntryDict-class.html" 
+      class="link">EntryDict</a></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gui.app_interface.IApplication-class.html#getSearchResult" class="summary-sig-name">getSearchResult</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Get the list of entries filtered by the search.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gui.app_interface-pysrc.html#IApplication.getSearchResult">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__delattr__</code>,
+      <code>__format__</code>,
+      <code>__getattribute__</code>,
+      <code>__hash__</code>,
+      <code>__init__</code>,
+      <code>__new__</code>,
+      <code>__reduce__</code>,
+      <code>__reduce_ex__</code>,
+      <code>__repr__</code>,
+      <code>__setattr__</code>,
+      <code>__sizeof__</code>,
+      <code>__str__</code>,
+      <code>__subclasshook__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== PROPERTIES ==================== -->
+<a name="section-Properties"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Properties</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Properties"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__class__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Method Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-MethodDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="importFile"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">importFile</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">path</span>,
+        <span class="sig-arg">importFormat</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.app_interface-pysrc.html#IApplication.importFile">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Import a list of entries from a file in a given format.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>path</code></strong> (<code class="link">str</code>) - The path to a file.</li>
+        <li><strong class="pname"><code>importFormat</code></strong> (<a href="utils.settings.ImportFormat-class.html" 
+          class="link">utils.settings.ImportFormat</a>) - The format of the file.</li>
+    </ul></dd>
+    <dt>Returns: <code class="link">bool</code></dt>
+        <dd><code>True</code> if succeeded, <code>False</code> otherwise.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="exportFile"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">exportFile</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">path</span>,
+        <span class="sig-arg">exportFormat</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.app_interface-pysrc.html#IApplication.exportFile">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Export the list of entries to a file in a given format.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>path</code></strong> (<code class="link">str</code>) - The path to a file.</li>
+        <li><strong class="pname"><code>exportFormat</code></strong> (<a href="utils.settings.ExportFormat-class.html" 
+          class="link">utils.settings.ExportFormat</a>) - The format of the file.</li>
+    </ul></dd>
+    <dt>Returns: <code class="link">bool</code></dt>
+        <dd><code>True</code> if succeeded, <code>False</code> otherwise.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="addEntry"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">addEntry</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">entryBibTeX</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.app_interface-pysrc.html#IApplication.addEntry">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Add a new entry. If <code>entryBibTeX==None</code>, an empty entry is 
+  created.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>entryBibTeX</code></strong> (<code class="link">str</code>) - The BibTeX reference of the entry.</li>
+    </ul></dd>
+    <dt>Returns: <code class="link">int</code></dt>
+        <dd>The <i>id</i> of the new entry. <code>None</code> is returned if 
+          failed.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="duplicateEntry"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">duplicateEntry</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">entryId</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.app_interface-pysrc.html#IApplication.duplicateEntry">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Create a copy of an existing entry.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>entryId</code></strong> (<code class="link">int</code>) - The <i>id</i> of the entry to copy.</li>
+    </ul></dd>
+    <dt>Returns: <code class="link">int</code></dt>
+        <dd>The <i>id</i> of the new entry. <code>None</code> is returned if 
+          failed.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="updateEntry"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">updateEntry</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">entryId</span>,
+        <span class="sig-arg">entryBibTeX</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.app_interface-pysrc.html#IApplication.updateEntry">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Update an entry with a new BibTeX reference.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>entryId</code></strong> (<code class="link">int</code>) - The <i>id</i> of the entry to update.</li>
+        <li><strong class="pname"><code>entryBibTeX</code></strong> (<code class="link">str</code>) - The BibTeX reference.</li>
+    </ul></dd>
+    <dt>Returns: <code class="link">bool</code></dt>
+        <dd><code>True</code> if succeeded, <code>False</code> otherwise.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="deleteEntry"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">deleteEntry</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">entryId</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.app_interface-pysrc.html#IApplication.deleteEntry">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Delete an entry.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>entryId</code></strong> (<code class="link">int</code>) - The <i>id</i> of the entry to delete.</li>
+    </ul></dd>
+    <dt>Returns: <code class="link">bool</code></dt>
+        <dd><code>True</code> if succeeded, <code>False</code> otherwise.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="previewEntry"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">previewEntry</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">entryId</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.app_interface-pysrc.html#IApplication.previewEntry">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Convert an entry into its HTML representation following the 
+  bibliography style specified in <a 
+  href="utils.settings.Preferences-class.html" 
+  class="link">utils.settings.Preferences</a>.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>entryId</code></strong> (<code class="link">int</code>) - The <i>id</i> of the entry to preview.</li>
+    </ul></dd>
+    <dt>Returns: <code class="link">str</code></dt>
+        <dd>The HTML representation of the entry.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="undo"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">undo</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.app_interface-pysrc.html#IApplication.undo">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Undo the last action performed.</p>
+  <dl class="fields">
+    <dt>Returns: <code class="link">bool</code></dt>
+        <dd><code>True</code> if succeeded, <code>False</code> otherwise.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="hasUndoableActionLeft"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">hasUndoableActionLeft</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.app_interface-pysrc.html#IApplication.hasUndoableActionLeft">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Verify if there is any action to undo.</p>
+  <dl class="fields">
+    <dt>Returns: <code class="link">bool</code></dt>
+        <dd><code>True</code> if succeeded, <code>False</code> otherwise.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="getEntryPaperURL"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">getEntryPaperURL</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">entryId</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.app_interface-pysrc.html#IApplication.getEntryPaperURL">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get the URL of the paper of the selected entry.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>entryId</code></strong> (<code class="link">int</code>) - The <i>id</i> of the entry.</li>
+    </ul></dd>
+    <dt>Returns: <code class="link">str</code></dt>
+        <dd>The URL (or path) to the file.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="search"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">search</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">query</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.app_interface-pysrc.html#IApplication.search">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Search for entries that satisfy the query provided.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>query</code></strong> (<code class="link">str</code>) - The query to match.</li>
+    </ul></dd>
+    <dt>Returns: <code class="link">bool</code></dt>
+        <dd><code>True</code> if succeeded, <code>False</code> otherwise.</dd>
+  </dl>
+<div class="fields">      <p><strong>Note:</strong>
+        <code>True</code> is returned even if no results were found.
+      </p>
+</div></td></tr></table>
+</div>
+<a name="sort"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">sort</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">field</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.app_interface-pysrc.html#IApplication.sort">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Inplace sort of in alphabetically increasing order all entries with 
+  respect to a field.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>field</code></strong> (<a href="gui.app_interface.EntryListColumn-class.html" 
+          class="link">EntryListColumn</a>) - The field to sort on.</li>
+    </ul></dd>
+    <dt>Returns: <code class="link">bool</code></dt>
+        <dd><code>True</code> if succeeded, <code>False</code> otherwise.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="getEntry"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">getEntry</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">entryId</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.app_interface-pysrc.html#IApplication.getEntry">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Convert an entry into an <a 
+  href="gui.app_interface.EntryDict-class.html" 
+  class="link">EntryDict</a>.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>entryId</code></strong> (<code class="link">int</code>) - The <i>id</i> of the entry.</li>
+    </ul></dd>
+    <dt>Returns: <a href="gui.app_interface.EntryDict-class.html" 
+      class="link">EntryDict</a></dt>
+        <dd>The entry.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="getBibTeX"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">getBibTeX</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">entryId</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.app_interface-pysrc.html#IApplication.getBibTeX">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Convert an entry into its BibTeX reference.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>entryId</code></strong> (<code class="link">int</code>) - The <i>id</i> of the entry.</li>
+    </ul></dd>
+    <dt>Returns: <code class="link">str</code></dt>
+        <dd>The BibTeX reference.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="getAllEntries"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">getAllEntries</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.app_interface-pysrc.html#IApplication.getAllEntries">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get the list of all entries converted into <a 
+  href="gui.app_interface.EntryDict-class.html" 
+  class="link">EntryDict</a>.</p>
+  <dl class="fields">
+    <dt>Returns: <code class="link">list</code></dt>
+        <dd>The list of entries.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="getEntryCount"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">getEntryCount</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.app_interface-pysrc.html#IApplication.getEntryCount">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get the total number of entries.</p>
+  <dl class="fields">
+    <dt>Returns: <code class="link">int</code></dt>
+        <dd>The total.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="getSearchResult"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">getSearchResult</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gui.app_interface-pysrc.html#IApplication.getSearchResult">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get the list of entries filtered by the search.</p>
+  <dl class="fields">
+    <dt>Returns: <a href="gui.app_interface.EntryDict-class.html" 
+      class="link">EntryDict</a></dt>
+        <dd>The list of entries.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Wed Jan 22 13:16:35 2014
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

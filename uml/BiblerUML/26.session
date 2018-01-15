@@ -1,0 +1,15 @@
+window_sizes 1920 1138 366 1548 1280 82
+diagrams
+  classdiagram_ref 128009 // app
+    1548 982 100 3 0 0
+  active  classdiagram_ref 134532 // fields
+    1548 982 100 4 0 0
+end
+show_stereotypes
+selected classdiagram_ref 134532 // fields
+open
+  classview_ref 147939 // Packages
+  classview_ref 128009 // Class
+  deploymentview_ref 134562 // Deployment
+end
+end

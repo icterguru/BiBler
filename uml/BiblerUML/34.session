@@ -1,0 +1,20 @@
+window_sizes 1366 706 320 960 597 35
+diagrams
+  classdiagram_ref 128009 // application
+    1040 597 100 4 313 0
+  active  sequencediagram_ref 141986 // Sort
+    828 477 100 4 0 0
+end
+show_stereotypes
+selected sequencediagram_ref 141986 // Sort
+open
+  classview_ref 128009 // app
+  artifact_ref 134562 // UserInterface
+  artifact_ref 135202 // Article
+  artifact_ref 135330 // Book
+  artifact_ref 135458 // InProceedings
+  artifact_ref 135586 // PhdThesis
+  artifact_ref 135714 // TechReport
+  artifact_ref 135970 // ReferenceManager
+end
+end
